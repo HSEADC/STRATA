@@ -270,84 +270,104 @@ input[type="email"]::placeholder {
 
 /* ___________________index.html___________________ */
 
-.A_Heading-H1 {
+/* Общие стили */
+.A_Heading-H1,
+.A_Heading-H2,
+.A_Heading-H3,
+.A_Heading-H4,
+.A_Heading-H5,
+.A_Paragraph,
+.A_Paragraph_Secondary,
+.A_Navigation-Text,
+.A_Tag-Text {
   font-family: var(--font-family);
-  font-weight: var(--font-weight-bold);
   color: var(--color-text);
+}
+
+/* Bold */
+.A_Heading-H1,
+.A_Heading-H2 {
+  font-weight: var(--font-weight-bold);
   text-transform: uppercase;
+}
+
+/* Medium */
+.A_Heading-H3,
+.A_Heading-H5 {
+  font-weight: var(--font-weight-medium);
+}
+
+/* Regular */
+.A_Heading-H4,
+.A_Paragraph,
+.A_Paragraph_Secondary,
+.A_Navigation-Text,
+.A_Tag-Text {
+  font-weight: var(--font-weight-regular);
+}
+
+/* Размеры */
+.A_Heading-H1 {
   font-size: 50rem;
 }
-
 .A_Heading-H2 {
-  font-family: var(--font-family);
-  font-weight: var(--font-weight-bold);
-  color: var(--color-text);
-  text-transform: uppercase;
   font-size: 36rem;
 }
-
 .A_Heading-H3 {
-  font-family: var(--font-family);
-  font-weight: var(--font-weight-medium);
-  color: var(--color-text);
   font-size: 28rem;
 }
-
 .A_Heading-H4 {
-  font-family: var(--font-family);
-  font-weight: var(--font-weight-regular);
-  color: var(--color-text);
   font-size: 24rem;
 }
-
 .A_Heading-H5 {
-  font-family: var(--font-family);
-  font-weight: var(--font-weight-medium);
-  color: var(--color-text);
   font-size: 20rem;
 }
 
 .A_Paragraph {
-  font-family: var(--font-family);
-  font-weight: var(--font-weight-regular);
-  color: var(--color-text);
   font-size: 20rem;
   line-height: 1.5;
   text-decoration: none;
 }
 
 .A_Paragraph_Secondary {
-  font-family: var(--font-family);
-  font-weight: var(--font-weight-regular);
-  color: var(--color-text);
   font-size: 16rem;
   line-height: 1.5;
 }
 
 .A_Navigation-Text {
-  font-family: var(--font-family);
-  font-weight: var(--font-weight-regular);
-  color: var(--color-text);
   font-size: 18rem;
   text-decoration: none;
+}
+
+.A_Tag-Text {
+  font-size: 14rem;
 }
 
 .A_Navigation-TextDark {
   color: var(--color-card);
 }
 
-.A_Tag-Text {
-  font-family: var(--font-family);
-  font-weight: var(--font-weight-regular);
-  color: var(--color-text);
-  font-size: 14rem;
-  /* line-height: 1.5; */
-}
-
 .A_Button {
   background-color: var(--color-button);
   transition: background-color 0.25s ease;
   cursor: pointer;
+}
+
+.A_Button-Arrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 70rem;
+  width: 267rem;
+  min-height: 50rem;
+  border: none;
+  border-radius: 71rem;
+}
+
+.A_ButtonImg {
+  display: block;
+  width: 44rem;
+  height: auto;
 }
 
 .A_Button:hover {
@@ -389,6 +409,10 @@ input[type="email"]::placeholder {
   background-color: var(--color-card-accent);
 }
 
+.A_NavigationLink-Acrtive {
+  background-color: var(--color-card-accent);
+}
+
 .A_Tag {
   padding: 15rem 25rem;
   border-radius: 64rem;
@@ -408,6 +432,15 @@ input[type="email"]::placeholder {
 }
 
 /* ___________________index.html___________________ */
+
+/* ___________________404.html___________________ */
+.A_Heading-NotFound {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  text-transform: uppercase;
+  font-size: 300rem;
+}
 
 /* ___________________articles.html___________________ */
 .A_Header-Filter-IconImage {
@@ -457,13 +490,27 @@ input[type="email"]::placeholder {
   height: auto;
 }
 
-.M_Button-more {
+/* ___________________interactive.html___________________ */
+.A_TestCard_image {
+  display: block;
+  width: 300rem;
+  height: auto;
+}
+
+.A_TestCard_ContentButton {
+  display: flex;
+  justify-content: center;
   align-self: center;
-  padding-top: 10rem;
-  width: 267rem;
-  min-height: 50rem;
+  width: 30rem;
+  min-height: 30rem;
+  border-radius: 50%;
   border: none;
-  border-radius: 71rem;
+}
+
+.A_TestCard_ContentImage {
+  display: block;
+  width: 8rem;
+  height: auto;
 }
 
 .M_Logo {
@@ -579,6 +626,13 @@ input[type="email"]::placeholder {
 
 /* ___________________index.html___________________ */
 
+/* ___________________404.html___________________ */
+.M_HeroContent-NotFound {
+  gap: 0;
+}
+.M_TagGroup-NotFound {
+  padding-top: 0;
+}
 /* ___________________articles.html___________________ */
 .M_HeroContent-articles {
   gap: 20rem;
@@ -657,45 +711,46 @@ input[type="email"]::placeholder {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-image: none;
 }
 
-.M_Articles-ticks {
+.M_Articles-ticks.visible {
   background-image: url(9ed292b6284bd5d06bff.webp);
 }
-.M_Articles-storm {
+.M_Articles-storm.visible {
   background-image: url(9c0e678b05ad6b9bcdc3.webp);
 }
-.M_Articles-compass {
+.M_Articles-compass.visible {
   background-image: url(0cfd1359b4a51af7587e.webp);
 }
-.M_Articles-compass {
+.M_Articles-compass.visible {
   background-image: url(0cfd1359b4a51af7587e.webp);
 }
-.M_Articles-trail {
+.M_Articles-trail.visible {
   background-image: url(2c7ca07ddfc6ab145082.webp);
 }
-.M_Articles-backpack {
+.M_Articles-backpack.visible {
   background-image: url(ee84da4c1ac4b8ce0ce0.webp);
 }
-.M_Articles-clothing {
+.M_Articles-clothing.visible {
   background-image: url(981aee85f252e8424291.webp);
 }
-.M_Articles-bonfire {
+.M_Articles-bonfire.visible {
   background-image: url(5055e1f85690a3a52b9f.webp);
 }
-.M_Articles-tea {
+.M_Articles-tea.visible {
   background-image: url(876b847297de91e5dbb0.webp);
 }
-.M_Articles-seasons {
+.M_Articles-seasons.visible {
   background-image: url(5c47bf44968a55e8d5f1.webp);
 }
-.M_Articles-biotopes {
+.M_Articles-biotopes.visible {
   background-image: url(0de40f984989386891a6.webp);
 }
-.M_Articles-boletus {
+.M_Articles-boletus.visible {
   background-image: url(c54e6a90d489a46f2bfd.webp);
 }
-.M_Articles-fox {
+.M_Articles-fox.visible {
   background-image: url(89a196be479b82afb54c.webp);
 }
 
@@ -724,6 +779,71 @@ input[type="email"]::placeholder {
   gap: 10rem;
   background-color: var(--color-button);
   text-decoration: none;
+}
+
+.M_Button-more {
+  align-self: center;
+  width: 267rem;
+  min-height: 50rem;
+  border: none;
+  border-radius: 71rem;
+}
+
+/* ___________________interactive.html___________________ */
+
+.M_TestCard_ContentTags {
+  display: flex;
+  justify-content: space-between;
+}
+
+.M_TestCard_Discription {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.M_HeroTest_tags {
+  display: flex;
+  gap: 10rem;
+}
+
+.M_HeroTest_Content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10rem;
+  width: 450rem;
+  text-align: center;
+}
+
+.M_LearnCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem 10rem 20rem;
+  gap: 20rem;
+  text-decoration: none;
+  background-color: var(--color-card);
+  border-radius: 15rem;
+}
+
+.M_LearnCard-imageWrapper {
+  justify-content: center;
+  align-items: start;
+  width: 300rem;
+  min-height: 206rem;
+}
+
+.M_Articles-CardMedia-trail {
+  background-image: url(a9280f077922aa9e78cd.webp);
+}
+
+.M_Articles-CardMedia-fox {
+  background-image: url(8b3a524c406e9d9834bc.webp);
+}
+
+.M_Articles-CardMedia-biotopes {
+  background-image: url(51652ac5da5f2f57e7ff.webp);
 }
 
 .O_Header {
@@ -761,6 +881,13 @@ input[type="email"]::placeholder {
   gap: 220rem;
   background-image: url(473f1901cb630a9aed33.webp);
   min-height: 807rem;
+}
+
+/* ___________________404.html___________________ */
+.O_Header-NotFound {
+  gap: 180rem;
+  background-image: url(74d37c63886aa2302f28.webp);
+  min-height: 100vh;
 }
 
 /* ___________________articles.html___________________ */
@@ -804,6 +931,68 @@ input[type="email"]::placeholder {
   width: 434rem;
   border-radius: 15rem;
   background-color: var(--color-card);
+}
+
+/* ___________________interactive.html___________________ */
+.O_Header-Interactive {
+  gap: 200rem;
+  background-image: url(3787ea562b0e23b66b2f.webp);
+  min-height: 695rem;
+}
+
+.O_Main-Interactive {
+  padding: 120rem 0;
+}
+
+.O_Section-Tests {
+  display: flex;
+  padding: 0 40rem;
+  gap: 30rem;
+}
+
+.O_TestCard {
+  display: flex;
+  gap: 10rem;
+  padding: 10rem;
+  width: 665rem;
+  min-height: 210rem;
+  border-radius: 15rem;
+  background-color: var(--color-card);
+  text-decoration: none;
+}
+
+.O_TestCard_Content {
+  display: flex;
+  flex-direction: column;
+  gap: 40rem;
+  width: 100%;
+}
+
+.O_HeroTest {
+  display: flex;
+  flex-direction: column;
+  gap: 80rem;
+  padding: 20rem 0;
+  width: 100%;
+  min-height: 412rem;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(402f07cf69f659f1292f.webp);
+  background-color: var(--color-surface);
+}
+
+.O_LearnMore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40rem;
+}
+
+.O_LearnMore-grid {
+  display: flex;
+  gap: 30rem;
 }
 
 
