@@ -1,5 +1,11 @@
 @import "reset.css";
 @import "fonts.css";
-@import "layout.css";
+@import "basic.css";
 @import "adaptive.css";
 @import "variables.css";
+
+@import "components/01_quarks.css";
+@import "components/02_atoms.css";
+@import "components/03_molecules.css";
+@import "components/04_organisms.css";
+@import "components/05_utilities.css";

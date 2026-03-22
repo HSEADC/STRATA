@@ -10,7 +10,8 @@ const path = require("path");
 module.exports = {
   entry: {
     index: "./src/javascripts/index.js",
-    // styleguide: "./src/javascripts/styleguide.js",
+    allStyles: "./src/javascripts/allStyles.js",
+    sectionArticles: "./src/javascripts/sectionArticles.js",
   },
   output: {
     filename: "[name].js",

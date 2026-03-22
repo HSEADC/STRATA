@@ -1,0 +1,259 @@
+.M_Logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40rem;
+  height: 40rem;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: var(--color-surface);
+}
+
+.M_Search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40rem;
+  height: 40rem;
+  padding: 2.5rem;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--color-surface);
+  cursor: pointer;
+}
+
+.M_NavigationMenu {
+  display: flex;
+  padding: 0 90rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 600rem;
+  min-height: 40rem;
+  border-radius: 50rem;
+  background-color: var(--color-surface);
+}
+
+.M_NavigationItem {
+  list-style: none;
+}
+
+.M_HeroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 27rem;
+}
+
+.M_TagGroup {
+  display: flex;
+  align-items: center;
+  padding-top: 27rem;
+}
+
+.M_TagIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50rem;
+  min-height: 50rem;
+  border-radius: 50%;
+  border: 1.2rem solid var(--color-text);
+}
+
+.M_Button {
+  background-color: var(--color-button);
+  transition: background-color 0.25s ease;
+  cursor: pointer;
+}
+
+.M_Button:hover {
+  background-color: var(--color-text);
+}
+
+.M_Footer-Area {
+  display: flex;
+  flex-direction: column;
+  gap: 60rem;
+}
+
+.M_Footer-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40rem;
+}
+
+.M_Social-Network {
+  cursor: pointer;
+}
+
+.M_Footer-Section {
+  display: flex;
+  gap: 40rem;
+}
+
+.M_Footer-Section-Divisions {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.M_Footer-Section-Author {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.M_Footer-Section-DivisionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* ___________________index.html___________________ */
+
+/* ___________________articles.html___________________ */
+.M_HeroContent-articles {
+  gap: 20rem;
+}
+
+.M_Header-Toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.M_Header-FilterButton {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.M_Header-Filter-Icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40rem;
+  min-height: 40rem;
+  border-radius: 50%;
+  background-color: var(--color-button);
+}
+
+.M_Header-FilterGroup {
+  display: none;
+  flex-direction: column;
+  gap: 15rem;
+}
+
+.M_Header-FilterGroup.open {
+  display: flex;
+}
+
+.M_Header-FilterGroup-Tegs {
+  display: flex;
+  gap: 10rem;
+}
+
+.M_TagItem {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+  padding: 0 15rem;
+  height: 30rem;
+  border-radius: 52rem;
+  user-select: none;
+}
+
+.M_TagItem-filter {
+  background-color: rgba(45, 78, 30, 0.3);
+  cursor: pointer;
+}
+
+.M_TagItem-filter:hover {
+  background-color: rgba(45, 78, 30, 0.6);
+  cursor: pointer;
+}
+
+.M_TagItem-filter.active {
+  background-color: var(--color-tag);
+}
+
+.M_Articles-CardMedia {
+  display: flex;
+  justify-content: end;
+  padding: 10rem;
+  width: 414rem;
+  min-height: 173rem;
+  border-radius: 10rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.M_Articles-ticks {
+  background-image: url("/src/images/articles/article_ticks.webp");
+}
+.M_Articles-storm {
+  background-image: url("/src/images/articles/article_storm.webp");
+}
+.M_Articles-compass {
+  background-image: url("/src/images/articles/article_compass.webp");
+}
+.M_Articles-compass {
+  background-image: url("/src/images/articles/article_compass.webp");
+}
+.M_Articles-trail {
+  background-image: url("/src/images/articles/article_trail.webp");
+}
+.M_Articles-backpack {
+  background-image: url("/src/images/articles/article_backpack.webp");
+}
+.M_Articles-clothing {
+  background-image: url("/src/images/articles/article_clothing.webp");
+}
+.M_Articles-bonfire {
+  background-image: url("/src/images/articles/article_bonfire.webp");
+}
+.M_Articles-tea {
+  background-image: url("/src/images/articles/article_tea.webp");
+}
+.M_Articles-seasons {
+  background-image: url("/src/images/articles/article_seasons.webp");
+}
+.M_Articles-biotopes {
+  background-image: url("/src/images/articles/article_biotopes.webp");
+}
+.M_Articles-boletus {
+  background-image: url("/src/images/articles/article_boletus.webp");
+}
+.M_Articles-fox {
+  background-image: url("/src/images/articles/article_fox.webp");
+}
+
+.M_TagItem-Article {
+  background-color: var(--color-tag);
+}
+
+.M_Articles-CardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.M_Articles-CardFooter {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10rem;
+}
+
+.M_Download-Button {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  border: none;
+  gap: 10rem;
+  background-color: var(--color-button);
+  text-decoration: none;
+}

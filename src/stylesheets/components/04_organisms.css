@@ -1,0 +1,79 @@
+.O_Header {
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50rem 40rem;
+}
+
+.O_Navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.O_Main {
+  display: flex;
+  flex-direction: column;
+  padding: 120rem 40rem;
+  gap: 120rem;
+}
+
+.O_Footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 50rem 40rem;
+  width: 100%;
+  min-height: 305rem;
+  background-color: var(--color-surface);
+}
+
+/* ___________________index.html___________________ */
+.O_Header-main {
+  gap: 220rem;
+  background-image: url("/src/images/hero-bg.webp");
+  min-height: 807rem;
+}
+
+/* ___________________articles.html___________________ */
+.O_Header-articles {
+  gap: 200rem;
+  background-image: url("/src/images/articles-bg.webp");
+  min-height: 695rem;
+}
+
+.O_Section-Checklist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40rem;
+}
+
+.O_Section-Articles {
+  display: flex;
+  flex-direction: column;
+  gap: 40rem;
+}
+
+.O_Header-Articles {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+}
+
+.O_Articles-Grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30rem;
+}
+
+.O_Articles-Card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 10rem;
+  gap: 10rem;
+  width: 434rem;
+  border-radius: 15rem;
+  background-color: var(--color-card);
+}

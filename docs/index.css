@@ -145,6 +145,7 @@ table {
   font-display: swap;
 }
 
+/* 1. BASE (reset, body, html) */
 *,
 *::after,
 *::before {
@@ -205,10 +206,49 @@ html {
   font-size: calc(1vw / 14.4);
   scroll-behavior: smooth;
 }
-h1 {
+
+input[type="email"] {
+  padding: 8rem 25rem;
+  width: 400rem;
+  height: 50rem;
+  border-radius: 64rem;
+  border: 1.2rem solid var(--color-text);
+  background-color: transparent;
   font-family: var(--font-family);
+  font-weight: var(--font-weight-regular);
   color: var(--color-text);
-  font-size: 60rem;
+  outline: none;
+  font-size: 18rem;
+}
+input[type="email"]::placeholder {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text);
+  font-size: 18rem;
+}
+#my-form {
+  display: flex;
+  gap: 10rem;
+}
+#my-form-button {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 50rem;
+  min-height: 50rem;
+  border-radius: 50%;
+  border: 1.2rem solid var(--color-text);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#my-form-status {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text);
+  font-size: 18rem;
+  text-align: center;
+  background-color: transparent;
 }
 
 /* @media screen and (max-width: 440px) {
@@ -227,6 +267,545 @@ h1 {
   --font-weight-medium: 500;
   --font-weight-regular: 400;
 }
+
+/* ___________________index.html___________________ */
+
+.A_Heading-H1 {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  text-transform: uppercase;
+  font-size: 50rem;
+}
+
+.A_Heading-H2 {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  text-transform: uppercase;
+  font-size: 36rem;
+}
+
+.A_Heading-H3 {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+  font-size: 28rem;
+}
+
+.A_Heading-H4 {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text);
+  font-size: 24rem;
+}
+
+.A_Heading-H5 {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+  font-size: 20rem;
+}
+
+.A_Paragraph {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text);
+  font-size: 20rem;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.A_Paragraph_Secondary {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text);
+  font-size: 16rem;
+  line-height: 1.5;
+}
+
+.A_Navigation-Text {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text);
+  font-size: 18rem;
+  text-decoration: none;
+}
+
+.A_Navigation-TextDark {
+  color: var(--color-card);
+}
+
+.A_Tag-Text {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text);
+  font-size: 14rem;
+  /* line-height: 1.5; */
+}
+
+.A_Button {
+  background-color: var(--color-button);
+  transition: background-color 0.25s ease;
+  cursor: pointer;
+}
+
+.A_Button:hover {
+  background-color: var(--color-text);
+}
+
+.A_InnerCircle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35rem;
+  height: 35rem;
+  border-radius: 50%;
+  background-color: var(--color-card-accent);
+}
+
+.A_LogoImage {
+  display: block;
+  width: 19.79rem;
+  height: auto;
+}
+
+.A_SearchIcon {
+  display: block;
+  width: 16rem;
+  height: auto;
+}
+
+.A_NavigationLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 15rem;
+  border-radius: 20rem;
+  cursor: pointer;
+}
+
+.A_NavigationLink:hover {
+  background-color: var(--color-card-accent);
+}
+
+.A_Tag {
+  padding: 15rem 25rem;
+  border-radius: 64rem;
+  border: 1.2rem solid var(--color-text);
+}
+
+.A_TagIcon-Image {
+  display: block;
+  width: 28rem;
+  height: auto;
+}
+
+.A_TagIcon-Social-Network {
+  display: block;
+  width: 38rem;
+  height: auto;
+}
+
+/* ___________________index.html___________________ */
+
+/* ___________________articles.html___________________ */
+.A_Header-Filter-IconImage {
+  display: block;
+  width: 20rem;
+  height: auto;
+}
+
+.A_TagItem-Image {
+  display: block;
+  width: 19rem;
+  height: auto;
+}
+
+.A_TagItem-Image-Fire {
+  width: 16rem;
+}
+
+.A_Tag-TextDownload {
+  color: var(--color-card);
+}
+
+.A_Download-Image {
+  display: block;
+  width: 12rem;
+  height: auto;
+  pointer-events: none;
+}
+
+.A_Articles-Link {
+  text-decoration: none;
+}
+
+.A_Articles-Link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.A_Icon-Arrow {
+  display: block;
+  width: 20.76rem;
+  height: auto;
+}
+
+.M_Button-more {
+  align-self: center;
+  padding-top: 10rem;
+  width: 267rem;
+  min-height: 50rem;
+  border: none;
+  border-radius: 71rem;
+}
+
+.M_Logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40rem;
+  height: 40rem;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: var(--color-surface);
+}
+
+.M_Search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40rem;
+  height: 40rem;
+  padding: 2.5rem;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--color-surface);
+  cursor: pointer;
+}
+
+.M_NavigationMenu {
+  display: flex;
+  padding: 0 90rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 600rem;
+  min-height: 40rem;
+  border-radius: 50rem;
+  background-color: var(--color-surface);
+}
+
+.M_NavigationItem {
+  list-style: none;
+}
+
+.M_HeroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 27rem;
+}
+
+.M_TagGroup {
+  display: flex;
+  align-items: center;
+  padding-top: 27rem;
+}
+
+.M_TagIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50rem;
+  min-height: 50rem;
+  border-radius: 50%;
+  border: 1.2rem solid var(--color-text);
+}
+
+.M_Button {
+  background-color: var(--color-button);
+  transition: background-color 0.25s ease;
+  cursor: pointer;
+}
+
+.M_Button:hover {
+  background-color: var(--color-text);
+}
+
+.M_Footer-Area {
+  display: flex;
+  flex-direction: column;
+  gap: 60rem;
+}
+
+.M_Footer-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40rem;
+}
+
+.M_Social-Network {
+  cursor: pointer;
+}
+
+.M_Footer-Section {
+  display: flex;
+  gap: 40rem;
+}
+
+.M_Footer-Section-Divisions {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.M_Footer-Section-Author {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.M_Footer-Section-DivisionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* ___________________index.html___________________ */
+
+/* ___________________articles.html___________________ */
+.M_HeroContent-articles {
+  gap: 20rem;
+}
+
+.M_Header-Toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.M_Header-FilterButton {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.M_Header-Filter-Icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40rem;
+  min-height: 40rem;
+  border-radius: 50%;
+  background-color: var(--color-button);
+}
+
+.M_Header-FilterGroup {
+  display: none;
+  flex-direction: column;
+  gap: 15rem;
+}
+
+.M_Header-FilterGroup.open {
+  display: flex;
+}
+
+.M_Header-FilterGroup-Tegs {
+  display: flex;
+  gap: 10rem;
+}
+
+.M_TagItem {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+  padding: 0 15rem;
+  height: 30rem;
+  border-radius: 52rem;
+  user-select: none;
+}
+
+.M_TagItem-filter {
+  background-color: rgba(45, 78, 30, 0.3);
+  cursor: pointer;
+}
+
+.M_TagItem-filter:hover {
+  background-color: rgba(45, 78, 30, 0.6);
+  cursor: pointer;
+}
+
+.M_TagItem-filter.active {
+  background-color: var(--color-tag);
+}
+
+.M_Articles-CardMedia {
+  display: flex;
+  justify-content: end;
+  padding: 10rem;
+  width: 414rem;
+  min-height: 173rem;
+  border-radius: 10rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.M_Articles-ticks {
+  background-image: url(9ed292b6284bd5d06bff.webp);
+}
+.M_Articles-storm {
+  background-image: url(9c0e678b05ad6b9bcdc3.webp);
+}
+.M_Articles-compass {
+  background-image: url(0cfd1359b4a51af7587e.webp);
+}
+.M_Articles-compass {
+  background-image: url(0cfd1359b4a51af7587e.webp);
+}
+.M_Articles-trail {
+  background-image: url(2c7ca07ddfc6ab145082.webp);
+}
+.M_Articles-backpack {
+  background-image: url(ee84da4c1ac4b8ce0ce0.webp);
+}
+.M_Articles-clothing {
+  background-image: url(981aee85f252e8424291.webp);
+}
+.M_Articles-bonfire {
+  background-image: url(5055e1f85690a3a52b9f.webp);
+}
+.M_Articles-tea {
+  background-image: url(876b847297de91e5dbb0.webp);
+}
+.M_Articles-seasons {
+  background-image: url(5c47bf44968a55e8d5f1.webp);
+}
+.M_Articles-biotopes {
+  background-image: url(0de40f984989386891a6.webp);
+}
+.M_Articles-boletus {
+  background-image: url(c54e6a90d489a46f2bfd.webp);
+}
+.M_Articles-fox {
+  background-image: url(89a196be479b82afb54c.webp);
+}
+
+.M_TagItem-Article {
+  background-color: var(--color-tag);
+}
+
+.M_Articles-CardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.M_Articles-CardFooter {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10rem;
+}
+
+.M_Download-Button {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  border: none;
+  gap: 10rem;
+  background-color: var(--color-button);
+  text-decoration: none;
+}
+
+.O_Header {
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50rem 40rem;
+}
+
+.O_Navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.O_Main {
+  display: flex;
+  flex-direction: column;
+  padding: 120rem 40rem;
+  gap: 120rem;
+}
+
+.O_Footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 50rem 40rem;
+  width: 100%;
+  min-height: 305rem;
+  background-color: var(--color-surface);
+}
+
+/* ___________________index.html___________________ */
+.O_Header-main {
+  gap: 220rem;
+  background-image: url(473f1901cb630a9aed33.webp);
+  min-height: 807rem;
+}
+
+/* ___________________articles.html___________________ */
+.O_Header-articles {
+  gap: 200rem;
+  background-image: url(bd9ca0c9b8c8d94f4144.webp);
+  min-height: 695rem;
+}
+
+.O_Section-Checklist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40rem;
+}
+
+.O_Section-Articles {
+  display: flex;
+  flex-direction: column;
+  gap: 40rem;
+}
+
+.O_Header-Articles {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+}
+
+.O_Articles-Grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30rem;
+}
+
+.O_Articles-Card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 10rem;
+  gap: 10rem;
+  width: 434rem;
+  border-radius: 15rem;
+  background-color: var(--color-card);
+}
+
 
 
 

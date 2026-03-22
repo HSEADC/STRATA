@@ -9,13 +9,21 @@ function createPages(template, filename, chunks) {
 }
 
 const htmlPages = [
-  createPages("./src/index.html", "./index.html", ["index"]),
-  createPages("./src/404.html", "./404.html", ["index"]),
-  createPages("./src/pages/articles.html", "pages/articles.html", ["index"]),
+  createPages("./src/index.html", "./index.html", ["index", "allStyles"]),
+  createPages("./src/404.html", "./404.html", ["index", "allStyles"]),
+  createPages("./src/pages/articles.html", "pages/articles.html", [
+    "index",
+    "allStyles",
+    "sectionArticles",
+  ]),
   createPages("./src/pages/interactive.html", "pages/interactive.html", [
     "index",
+    "allStyles",
   ]),
-  createPages("./src/pages/calendar.html", "pages/calendar.html", ["index"]),
+  createPages("./src/pages/calendar.html", "pages/calendar.html", [
+    "index",
+    "allStyles",
+  ]),
 ];
 
 module.exports = htmlPages;
