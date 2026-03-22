@@ -35,6 +35,13 @@
   min-height: 807rem;
 }
 
+/* ___________________404.html___________________ */
+.O_Header-NotFound {
+  gap: 180rem;
+  background-image: url("/src/images/404-bg.webp");
+  min-height: 100vh;
+}
+
 /* ___________________articles.html___________________ */
 .O_Header-articles {
   gap: 200rem;
@@ -76,4 +83,66 @@
   width: 434rem;
   border-radius: 15rem;
   background-color: var(--color-card);
+}
+
+/* ___________________interactive.html___________________ */
+.O_Header-Interactive {
+  gap: 200rem;
+  background-image: url("/src/images/interactive-bg.webp");
+  min-height: 695rem;
+}
+
+.O_Main-Interactive {
+  padding: 120rem 0;
+}
+
+.O_Section-Tests {
+  display: flex;
+  padding: 0 40rem;
+  gap: 30rem;
+}
+
+.O_TestCard {
+  display: flex;
+  gap: 10rem;
+  padding: 10rem;
+  width: 665rem;
+  min-height: 210rem;
+  border-radius: 15rem;
+  background-color: var(--color-card);
+  text-decoration: none;
+}
+
+.O_TestCard_Content {
+  display: flex;
+  flex-direction: column;
+  gap: 40rem;
+  width: 100%;
+}
+
+.O_HeroTest {
+  display: flex;
+  flex-direction: column;
+  gap: 80rem;
+  padding: 20rem 0;
+  width: 100%;
+  min-height: 412rem;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/src/images/A_Mushrooms.webp");
+  background-color: var(--color-surface);
+}
+
+.O_LearnMore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40rem;
+}
+
+.O_LearnMore-grid {
+  display: flex;
+  gap: 30rem;
 }
