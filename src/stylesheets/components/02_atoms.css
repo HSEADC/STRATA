@@ -7,7 +7,10 @@
 .A_Paragraph,
 .A_Paragraph_Secondary,
 .A_Navigation-Text,
-.A_Tag-Text {
+.A_Tag-Text,
+.A_Heading-H5-Secondary,
+.A_Heading-H5-bold,
+.A_Paragraph_transparent {
   font-family: var(--font-family);
   color: var(--color-text);
 }
@@ -17,6 +20,10 @@
 .A_Heading-H2 {
   font-weight: var(--font-weight-bold);
   text-transform: uppercase;
+}
+
+.A_Heading-H5-bold {
+  font-weight: var(--font-weight-bold);
 }
 
 /* Medium */
@@ -30,7 +37,9 @@
 .A_Paragraph,
 .A_Paragraph_Secondary,
 .A_Navigation-Text,
-.A_Tag-Text {
+.A_Tag-Text,
+.A_Heading-H5-Secondary,
+.A_Paragraph_transparent {
   font-weight: var(--font-weight-regular);
 }
 
@@ -47,23 +56,37 @@
 .A_Heading-H4 {
   font-size: 24rem;
 }
-.A_Heading-H5 {
+.A_Heading-H5,
+.A_Heading-H5-bold,
+.A_Heading-H5-Secondary {
   font-size: 20rem;
 }
 
+.A_Heading-H5-Secondary {
+  line-height: 1.5;
+}
 .A_Paragraph {
   font-size: 20rem;
   line-height: 1.5;
   text-decoration: none;
 }
 
+.A_Paragraph_transparent,
 .A_Paragraph_Secondary {
   font-size: 16rem;
   line-height: 1.5;
 }
 
+.A_Paragraph_transparent {
+  opacity: 50%;
+}
+
 .A_Navigation-Text {
   font-size: 18rem;
+  text-decoration: none;
+}
+
+.A_Link {
   text-decoration: none;
 }
 
@@ -238,5 +261,86 @@
 .A_TestCard_ContentImage {
   display: block;
   width: 8rem;
+  height: auto;
+}
+
+/* ___________________test_mushroom.html___________________ */
+
+.A_AnswerImage {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.A_ProgressStep {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40rem;
+  height: 40rem;
+  padding: 0;
+  border: 1.5rem solid var(--color-text);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--color-text);
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.A_ProgressStep.is-active {
+  background: var(--color-text);
+  color: var(--color-card);
+}
+
+.A_ProgressStep::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 32rem;
+  height: 1.5rem;
+  background: var(--color-text);
+  transform: translateY(-50%);
+}
+
+.A_ProgressStep:last-child::after {
+  display: none;
+}
+
+.A_ProgressStep.is-completed {
+  background: var(--color-text);
+  color: var(--color-card);
+}
+
+/* ___________________results_test_mushrooms.html___________________ */
+.A_ResultDiagramImage {
+  display: block;
+  width: 215rem;
+  height: auto;
+  grid-area: diagram;
+  align-self: start;
+}
+
+.A_ResultDiagramText {
+  grid-area: diagram;
+  align-self: center;
+}
+
+.A_Button-TryAgain {
+  padding-left: 38rem;
+}
+
+.A_CorrectAnswerImage {
+  display: block;
+  width: 138rem;
+  height: auto;
+}
+
+/* ___________________test1_questions.html___________________ */
+.A_Test-ExamQuestionIcon {
+  display: block;
+  width: 20rem;
   height: auto;
 }

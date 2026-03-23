@@ -85,6 +85,10 @@
   background-color: var(--color-card);
 }
 
+.O_Articles-Card:hover {
+  background-color: rgb(19, 53, 36, 0.65);
+}
+
 /* ___________________interactive.html___________________ */
 .O_Header-Interactive {
   gap: 200rem;
@@ -111,6 +115,10 @@
   border-radius: 15rem;
   background-color: var(--color-card);
   text-decoration: none;
+}
+
+.O_TestCard:hover {
+  background-color: rgb(19, 53, 36, 0.65);
 }
 
 .O_TestCard_Content {
@@ -145,4 +153,104 @@
 .O_LearnMore-grid {
   display: flex;
   gap: 30rem;
+}
+
+/* ___________________main_test_mushroom.html___________________ */
+.O_Header-main-test {
+  gap: 250rem;
+  background-image: url("/src/images/test_mushroom-bg.webp");
+  min-height: 100vh;
+}
+
+/* ___________________main_test1_questions.html___________________ */
+.O_Header-test1 {
+  gap: 250rem;
+  background-image: url("/src/images/test1-bg.webp");
+  min-height: 100vh;
+}
+
+/* ___________________main_test2_questions.html___________________ */
+.O_Header-test2 {
+  gap: 250rem;
+  background-image: url("/src/images/test2-bg.webp");
+  min-height: 100vh;
+}
+
+/* ___________________test_mushroom.html___________________ */
+.O_Header-test-mushroom {
+  gap: 90rem;
+}
+
+.O_Test-Mushrooms {
+  display: flex;
+  flex-direction: column;
+  padding: 70rem 0;
+  align-items: center;
+  text-align: center;
+  gap: 60rem;
+}
+
+/* ___________________results_test_mushrooms.html___________________ */
+.O_MainResult {
+  display: flex;
+  flex-direction: column;
+  padding: 120rem 390rem;
+  gap: 120rem;
+}
+.O_ResultsTest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30rem;
+}
+
+.O_CorrectAnswersList {
+  display: flex;
+  flex-direction: column;
+  gap: 30rem;
+}
+
+.O_CorrectAnswerCard {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10rem;
+  gap: 10rem;
+  width: 100%;
+  min-height: 180rem;
+  background-color: var(--color-card);
+  border-radius: 15rem;
+}
+
+/* ___________________test1_questions.html___________________ */
+.O_Test-Exam {
+  display: flex;
+  flex-direction: column;
+  padding: 160rem 40rem 100rem;
+  gap: 170rem;
+}
+
+.O_Test-ExamContent {
+  display: flex;
+  flex-direction: column;
+  gap: 30rem;
+}
+
+.O_Test-ExamQuestions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30rem;
+}
+
+/* ___________________result_test_exam.html___________________ */
+.O_CorrectAnswerCardVar {
+  display: flex;
+  align-items: center;
+  padding: 20rem;
+  gap: 30rem;
+  width: 100%;
+  min-height: 180rem;
+  background-color: var(--color-card);
+  border-radius: 15rem;
 }

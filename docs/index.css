@@ -279,7 +279,10 @@ input[type="email"]::placeholder {
 .A_Paragraph,
 .A_Paragraph_Secondary,
 .A_Navigation-Text,
-.A_Tag-Text {
+.A_Tag-Text,
+.A_Heading-H5-Secondary,
+.A_Heading-H5-bold,
+.A_Paragraph_transparent {
   font-family: var(--font-family);
   color: var(--color-text);
 }
@@ -289,6 +292,10 @@ input[type="email"]::placeholder {
 .A_Heading-H2 {
   font-weight: var(--font-weight-bold);
   text-transform: uppercase;
+}
+
+.A_Heading-H5-bold {
+  font-weight: var(--font-weight-bold);
 }
 
 /* Medium */
@@ -302,7 +309,9 @@ input[type="email"]::placeholder {
 .A_Paragraph,
 .A_Paragraph_Secondary,
 .A_Navigation-Text,
-.A_Tag-Text {
+.A_Tag-Text,
+.A_Heading-H5-Secondary,
+.A_Paragraph_transparent {
   font-weight: var(--font-weight-regular);
 }
 
@@ -319,23 +328,37 @@ input[type="email"]::placeholder {
 .A_Heading-H4 {
   font-size: 24rem;
 }
-.A_Heading-H5 {
+.A_Heading-H5,
+.A_Heading-H5-bold,
+.A_Heading-H5-Secondary {
   font-size: 20rem;
 }
 
+.A_Heading-H5-Secondary {
+  line-height: 1.5;
+}
 .A_Paragraph {
   font-size: 20rem;
   line-height: 1.5;
   text-decoration: none;
 }
 
+.A_Paragraph_transparent,
 .A_Paragraph_Secondary {
   font-size: 16rem;
   line-height: 1.5;
 }
 
+.A_Paragraph_transparent {
+  opacity: 50%;
+}
+
 .A_Navigation-Text {
   font-size: 18rem;
+  text-decoration: none;
+}
+
+.A_Link {
   text-decoration: none;
 }
 
@@ -510,6 +533,87 @@ input[type="email"]::placeholder {
 .A_TestCard_ContentImage {
   display: block;
   width: 8rem;
+  height: auto;
+}
+
+/* ___________________test_mushroom.html___________________ */
+
+.A_AnswerImage {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.A_ProgressStep {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40rem;
+  height: 40rem;
+  padding: 0;
+  border: 1.5rem solid var(--color-text);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--color-text);
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.A_ProgressStep.is-active {
+  background: var(--color-text);
+  color: var(--color-card);
+}
+
+.A_ProgressStep::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 32rem;
+  height: 1.5rem;
+  background: var(--color-text);
+  transform: translateY(-50%);
+}
+
+.A_ProgressStep:last-child::after {
+  display: none;
+}
+
+.A_ProgressStep.is-completed {
+  background: var(--color-text);
+  color: var(--color-card);
+}
+
+/* ___________________results_test_mushrooms.html___________________ */
+.A_ResultDiagramImage {
+  display: block;
+  width: 215rem;
+  height: auto;
+  grid-area: diagram;
+  align-self: start;
+}
+
+.A_ResultDiagramText {
+  grid-area: diagram;
+  align-self: center;
+}
+
+.A_Button-TryAgain {
+  padding-left: 38rem;
+}
+
+.A_CorrectAnswerImage {
+  display: block;
+  width: 138rem;
+  height: auto;
+}
+
+/* ___________________test1_questions.html___________________ */
+.A_Test-ExamQuestionIcon {
+  display: block;
+  width: 20rem;
   height: auto;
 }
 
@@ -827,6 +931,10 @@ input[type="email"]::placeholder {
   border-radius: 15rem;
 }
 
+.M_LearnCard:hover {
+  background-color: rgb(19, 53, 36, 0.65);
+}
+
 .M_LearnCard-imageWrapper {
   justify-content: center;
   align-items: start;
@@ -844,6 +952,160 @@ input[type="email"]::placeholder {
 
 .M_Articles-CardMedia-biotopes {
   background-image: url(51652ac5da5f2f57e7ff.webp);
+}
+
+/* ___________________main_test_mushroom___________________ */
+.M_HeroContent-main-test {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 100rem;
+}
+
+.M_HeroContent-test_discription {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+}
+
+/* ___________________test_mushroom.html___________________ */
+.M_Answers {
+  display: flex;
+  gap: 30rem;
+}
+
+.M_TestHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.M_AnswerCard {
+  position: relative;
+  display: grid;
+  grid-template-areas: "stack";
+  width: 350rem;
+  height: 420rem;
+  padding: 0;
+  border: none;
+  background: transparent;
+  border-radius: 15rem;
+  overflow: hidden;
+  cursor: pointer;
+  box-sizing: border-box;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.M_AnswerCard > * {
+  grid-area: stack;
+}
+
+.M_AnswerCard::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1.5rem solid transparent;
+  border-radius: 15rem;
+  box-sizing: border-box;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.M_AnswerCard.is-selected::after {
+  border-color: var(--color-text);
+}
+
+.M_TagIcon-Test {
+  position: relative;
+  justify-self: start;
+  align-self: start;
+  margin: 20rem;
+  z-index: 2;
+}
+
+.M_TagIcon-Test {
+  position: relative;
+  justify-self: start;
+  align-self: start;
+  margin: 20rem;
+  z-index: 2;
+}
+
+.M_Progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30rem;
+}
+
+/* ___________________results_test_mushrooms.html___________________ */
+.M_ResultCard {
+  display: flex;
+  flex-direction: column;
+  gap: 30rem;
+  border-radius: 15rem;
+  padding: 20rem;
+  width: 660rem;
+  height: auto;
+  background-color: var(--color-card);
+}
+
+.M_ResultDiagram {
+  display: grid;
+  grid-template-areas: "diagram";
+  justify-content: center;
+}
+
+.M_ResultCard-Content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  width: 390rem;
+  gap: 10rem;
+}
+
+.M_CorrectAnswerContent {
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+}
+
+.M_CorrectAnswerImage {
+  position: absolute;
+  top: 10rem;
+  right: 10rem;
+}
+
+/* ___________________test1_questions.html___________________ */
+.M_Test-ExamQuestion {
+  display: flex;
+  flex-direction: column;
+  padding: 20rem;
+  gap: 20rem;
+  width: 665rem;
+  min-height: 133rem;
+  background-color: var(--color-card);
+  border-radius: 15rem;
+  border: none;
+  text-align: start;
+}
+
+.M_Test-ExamQuestion.is-selected {
+  background-color: var(--color-card-accent);
+}
+
+.M_Test-Exam_Title {
+  display: flex;
+  align-items: center;
+  gap: 15rem;
+}
+
+/* ___________________result_test_exam.html___________________ */
+.M_TagIconAnswer {
+  flex-shrink: 0;
 }
 
 .O_Header {
@@ -933,6 +1195,10 @@ input[type="email"]::placeholder {
   background-color: var(--color-card);
 }
 
+.O_Articles-Card:hover {
+  background-color: rgb(19, 53, 36, 0.65);
+}
+
 /* ___________________interactive.html___________________ */
 .O_Header-Interactive {
   gap: 200rem;
@@ -959,6 +1225,10 @@ input[type="email"]::placeholder {
   border-radius: 15rem;
   background-color: var(--color-card);
   text-decoration: none;
+}
+
+.O_TestCard:hover {
+  background-color: rgb(19, 53, 36, 0.65);
 }
 
 .O_TestCard_Content {
@@ -993,6 +1263,106 @@ input[type="email"]::placeholder {
 .O_LearnMore-grid {
   display: flex;
   gap: 30rem;
+}
+
+/* ___________________main_test_mushroom.html___________________ */
+.O_Header-main-test {
+  gap: 250rem;
+  background-image: url(5e06a1b006424dcc5ff5.webp);
+  min-height: 100vh;
+}
+
+/* ___________________main_test1_questions.html___________________ */
+.O_Header-test1 {
+  gap: 250rem;
+  background-image: url(e715960cb1babfc1894f.webp);
+  min-height: 100vh;
+}
+
+/* ___________________main_test2_questions.html___________________ */
+.O_Header-test2 {
+  gap: 250rem;
+  background-image: url(6224009b594bcc859ce5.webp);
+  min-height: 100vh;
+}
+
+/* ___________________test_mushroom.html___________________ */
+.O_Header-test-mushroom {
+  gap: 90rem;
+}
+
+.O_Test-Mushrooms {
+  display: flex;
+  flex-direction: column;
+  padding: 70rem 0;
+  align-items: center;
+  text-align: center;
+  gap: 60rem;
+}
+
+/* ___________________results_test_mushrooms.html___________________ */
+.O_MainResult {
+  display: flex;
+  flex-direction: column;
+  padding: 120rem 390rem;
+  gap: 120rem;
+}
+.O_ResultsTest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30rem;
+}
+
+.O_CorrectAnswersList {
+  display: flex;
+  flex-direction: column;
+  gap: 30rem;
+}
+
+.O_CorrectAnswerCard {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10rem;
+  gap: 10rem;
+  width: 100%;
+  min-height: 180rem;
+  background-color: var(--color-card);
+  border-radius: 15rem;
+}
+
+/* ___________________test1_questions.html___________________ */
+.O_Test-Exam {
+  display: flex;
+  flex-direction: column;
+  padding: 160rem 40rem 100rem;
+  gap: 170rem;
+}
+
+.O_Test-ExamContent {
+  display: flex;
+  flex-direction: column;
+  gap: 30rem;
+}
+
+.O_Test-ExamQuestions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30rem;
+}
+
+/* ___________________result_test_exam.html___________________ */
+.O_CorrectAnswerCardVar {
+  display: flex;
+  align-items: center;
+  padding: 20rem;
+  gap: 30rem;
+  width: 100%;
+  min-height: 180rem;
+  background-color: var(--color-card);
+  border-radius: 15rem;
 }
 
 
