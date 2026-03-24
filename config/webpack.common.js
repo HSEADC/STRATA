@@ -20,6 +20,7 @@ module.exports = {
     testMushroomResult: "./src/javascripts/testMushroomResult.js",
     testsExamResult: "./src/javascripts/testsExamResult.js",
     testForestAttention: "./src/javascripts/testForestAttention.js",
+    testForestAttentionResult: "./src/javascripts/testForestAttentionResult.js",
   },
   output: {
     filename: "[name].js",

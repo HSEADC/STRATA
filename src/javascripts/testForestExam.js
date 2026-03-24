@@ -218,7 +218,7 @@ const stages = [
 
 const config = {
   storageKey: "forestExamTestResult",
-  resultPage: "/pages/interactive/results_test_exam.html",
+  resultPage: "/STRATA/pages/interactive/results_test_exam.html",
 };
 
 const questionElement = document.querySelector(".A_Question");

@@ -67,7 +67,7 @@ const htmlPages = [
   createPages(
     "./src/pages/interactive/results_test_exam_attention.html",
     "pages/interactive/results_test_exam_attention.html",
-    ["index", "testMushroomResult", "allStyles"],
+    ["index", "testForestAttentionResult", "allStyles"],
   ),
 ];
 

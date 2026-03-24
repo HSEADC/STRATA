@@ -1,5 +1,8 @@
-console.log("FOREST RESULT PAGE LOADED");
-console.log("saved result =", localStorage.getItem("forestExamTestResult"));
+console.log("FOREST ATTENTION RESULT PAGE LOADED");
+console.log(
+  "saved result =",
+  localStorage.getItem("forestAttentionTestResult"),
+);
 
 import result0 from "../images/tests/M_ProgressCircle_0.png";
 import result20 from "../images/tests/M_ProgressCircle_20.png";
@@ -11,49 +14,50 @@ import result100 from "../images/tests/M_ProgressCircle_100.png";
 const results = {
   0: {
     percent: "0%",
-    header: "Опасный уровень",
+    header: "Стоит быть внимательнее",
     paragraph:
-      "Пока ты принимаешь решения, которые могут привести к ещё большей потере ориентации. Лучше изучить базовые правила поведения в лесу.",
+      "Пока ты часто выбираешь рискованные действия. Перед походом в лес полезно повторить базовые правила безопасности.",
     image: result0,
   },
   1: {
     percent: "20%",
-    header: "Слабый результат",
+    header: "Начало есть",
     paragraph:
-      "Ты иногда выбираешь правильные действия, но пока легко ошибиться в стрессовой ситуации.",
+      "Ты уже знаешь отдельные полезные правила, но в важных ситуациях пока легко ошибиться.",
     image: result20,
   },
   2: {
     percent: "40%",
     header: "Есть понимание",
     paragraph:
-      "Ты уже начинаешь ориентироваться в ситуации, но не всегда выбираешь безопасные решения.",
+      "Ты начинаешь ориентироваться в безопасном поведении в лесу, но часть решений пока остаётся неточной.",
     image: result40,
   },
   3: {
     percent: "60%",
     header: "Неплохой результат",
     paragraph:
-      "Ты в целом понимаешь, как действовать в лесу, но стоит закрепить навыки.",
+      "Ты уже понимаешь, как действовать в лесу, но некоторые ситуации стоит разобрать ещё раз.",
     image: result60,
   },
   4: {
     percent: "80%",
     header: "Очень хороший результат",
     paragraph:
-      "Ты уверенно ориентируешься в лесу и принимаешь правильные решения в большинстве ситуаций.",
+      "Ты хорошо ориентируешься в правилах поведения в лесу и обычно выбираешь безопасные решения.",
     image: result80,
   },
   5: {
     percent: "100%",
-    header: "Шикарный результат",
+    header: "Отличный результат",
     paragraph:
-      "Ты отлично знаешь, как действовать в лесу. С таким уровнем ты точно не растеряешься.",
+      "Ты отлично разбираешься в лесной безопасности и внимателен к важным признакам на маршруте.",
     image: result100,
   },
 };
 
-const resultCount = Number(localStorage.getItem("forestExamTestResult")) || 0;
+const resultCount =
+  Number(localStorage.getItem("forestAttentionTestResult")) || 0;
 
 const resultData = results[resultCount];
 
