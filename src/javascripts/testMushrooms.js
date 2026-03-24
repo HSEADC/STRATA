@@ -121,7 +121,7 @@ const stages = [
 
 const config = {
   storageKey: "mushroomTestResult",
-  resultPage: "/pages/interactive/results_test_mushrooms.html",
+  resultPage: "/STRATA/pages/interactive/results_test_mushrooms.html",
 };
 
 const questionElement = document.querySelector(".A_Question");

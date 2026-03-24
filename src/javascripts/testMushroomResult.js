@@ -55,7 +55,6 @@ const resultImage = document.querySelector(".A_ResultDiagramImage");
 const resultPercent = document.querySelector(".A_ResultDiagramText");
 const resultHeader = document.querySelector(".A_ResultHeader");
 const resultParagraph = document.querySelector(".A_ResultParagraph");
-const restartButton = document.querySelector(".A_Button-TryAgain");
 
 if (resultImage) {
   resultImage.src = resultData.image;
@@ -72,11 +71,4 @@ if (resultHeader) {
 
 if (resultParagraph) {
   resultParagraph.innerText = resultData.paragraph;
-}
-
-if (restartButton) {
-  restartButton.addEventListener("click", () => {
-    localStorage.removeItem("mushroomTestResult");
-    window.location.href = "test_mushroom.html";
-  });
 }
