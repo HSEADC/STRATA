@@ -84,6 +84,6 @@ if (restartButton) {
   restartButton.addEventListener("click", () => {
     localStorage.removeItem("forestExamTestResult");
 
-    window.location.href = "/pages/interactive/main_test1_questions.html";
+    window.location.href = "main_test1_questions.html";
   });
 }

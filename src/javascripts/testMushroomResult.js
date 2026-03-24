@@ -77,6 +77,6 @@ if (resultParagraph) {
 if (restartButton) {
   restartButton.addEventListener("click", () => {
     localStorage.removeItem("mushroomTestResult");
-    window.location.href = "/pages/interactive/test_mushroom.html";
+    window.location.href = "test_mushroom.html";
   });
 }

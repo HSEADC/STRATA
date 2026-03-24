@@ -1091,6 +1091,7 @@ input[type="email"]::placeholder {
   border-radius: 15rem;
   border: none;
   text-align: start;
+  cursor: pointer;
 }
 
 .M_Test-ExamQuestion.is-selected {
