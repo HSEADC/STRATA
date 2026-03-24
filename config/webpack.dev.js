@@ -6,12 +6,12 @@ module.exports = merge(common, {
   mode: "development",
   devtool: "inline-source-map",
   devServer: {
-    static: path.resolve(__dirname, "dev_build"), // Указываем полный путь
-    hot: true, // Включите горячую перезагрузку
-    open: true, // Чтобы браузер открывался сам
+    static: path.resolve(__dirname, "../public"),
+    hot: true,
+    open: true,
   },
   output: {
-    path: path.resolve(__dirname, "dev_build"),
+    path: path.resolve(__dirname, "../dev_build"),
     clean: true,
   },
 });
