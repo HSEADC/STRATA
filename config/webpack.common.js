@@ -73,6 +73,11 @@ module.exports = {
           to: "images",
           noErrorOnMissing: true,
         },
+        {
+          from: path.resolve(__dirname, "../src/articles_download"),
+          to: "articles_download",
+          noErrorOnMissing: true,
+        },
       ],
     }),
   ],
