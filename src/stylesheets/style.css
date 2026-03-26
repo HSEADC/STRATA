@@ -1,8 +1,8 @@
 @import "reset.css";
 @import "fonts.css";
+@import "variables.css";
 @import "basic.css";
 @import "adaptive.css";
-@import "variables.css";
 
 @import "components/01_quarks.css";
 @import "components/02_atoms.css";

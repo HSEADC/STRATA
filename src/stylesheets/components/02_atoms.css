@@ -183,6 +183,114 @@
 }
 
 /* ___________________index.html___________________ */
+.A_State_img {
+  display: block;
+  width: 41rem;
+  height: auto;
+}
+
+.A_ForestState {
+  display: block;
+  width: 39rem;
+  height: auto;
+  padding-top: 25rem;
+}
+
+.A_ForestState-Sky {
+  display: block;
+  width: 39rem;
+  height: auto;
+}
+
+.A_ForestStateVar {
+  display: block;
+  width: 18rem;
+  height: auto;
+  padding-top: 25rem;
+}
+
+.A_Tag-Text_State {
+  padding-top: 13rem;
+}
+
+.A_ForestState-Other {
+  display: block;
+  width: 18rem;
+  height: auto;
+}
+
+.A_ForestState-Mite {
+  display: block;
+  width: 28rem;
+  height: auto;
+}
+
+.A_Tag-Text-Dampness {
+  padding-left: 30rem;
+}
+
+.A_Tag-Text-Fire {
+  padding-left: 10rem;
+}
+
+.A_Tag-Text-Insect {
+  padding-left: 68rem;
+}
+
+.A_Tag-Text-Mite {
+  padding-left: 113rem;
+}
+
+.A_Button-ForestState {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 100rem;
+  width: 353rem;
+  min-height: 50rem;
+  border: none;
+  border-radius: 71rem;
+}
+
+.A_TestCard_ContentVar {
+  display: block;
+  width: 27rem;
+  height: auto;
+}
+
+.A_Button-MainArticle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 60rem;
+  width: 267rem;
+  min-height: 50rem;
+  border: none;
+  border-radius: 71rem;
+}
+
+.A_TestCardList_image {
+  display: block;
+  min-height: auto;
+}
+
+.A_Button-Dzen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  width: 45rem;
+  min-height: 45rem;
+  border: 1.5rem solid var(--color-text);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.A_Button-Dzen-img {
+  display: block;
+  width: 20rem;
+  height: auto;
+}
 
 /* ___________________404.html___________________ */
 .A_Heading-NotFound {

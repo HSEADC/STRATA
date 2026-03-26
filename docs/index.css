@@ -145,6 +145,20 @@ table {
   font-display: swap;
 }
 
+:root {
+  --color-background: #071a12;
+  --color-surface: #0d281b;
+  --color-card: #133524;
+  --color-card-accent: #1f5a3c;
+  --color-tag: #2d4e1e;
+  --color-text: #ffffff;
+  --color-button: #c6ff3d;
+  --font-family: "Cygre", sans-serif;
+  --font-weight-bold: 700;
+  --font-weight-medium: 500;
+  --font-weight-regular: 400;
+}
+
 /* 1. BASE (reset, body, html) */
 *,
 *::after,
@@ -253,20 +267,6 @@ input[type="email"]::placeholder {
 
 /* @media screen and (max-width: 440px) {
 } */
-
-:root {
-  --color-background: #071a12;
-  --color-surface: #0d281b;
-  --color-card: #133524;
-  --color-card-accent: #1f5a3c;
-  --color-tag: #2d4e1e;
-  --color-text: #ffffff;
-  --color-button: #c6ff3d;
-  --font-family: "Cygre", sans-serif;
-  --font-weight-bold: 700;
-  --font-weight-medium: 500;
-  --font-weight-regular: 400;
-}
 
 /* ___________________index.html___________________ */
 
@@ -455,6 +455,114 @@ input[type="email"]::placeholder {
 }
 
 /* ___________________index.html___________________ */
+.A_State_img {
+  display: block;
+  width: 41rem;
+  height: auto;
+}
+
+.A_ForestState {
+  display: block;
+  width: 39rem;
+  height: auto;
+  padding-top: 25rem;
+}
+
+.A_ForestState-Sky {
+  display: block;
+  width: 39rem;
+  height: auto;
+}
+
+.A_ForestStateVar {
+  display: block;
+  width: 18rem;
+  height: auto;
+  padding-top: 25rem;
+}
+
+.A_Tag-Text_State {
+  padding-top: 13rem;
+}
+
+.A_ForestState-Other {
+  display: block;
+  width: 18rem;
+  height: auto;
+}
+
+.A_ForestState-Mite {
+  display: block;
+  width: 28rem;
+  height: auto;
+}
+
+.A_Tag-Text-Dampness {
+  padding-left: 30rem;
+}
+
+.A_Tag-Text-Fire {
+  padding-left: 10rem;
+}
+
+.A_Tag-Text-Insect {
+  padding-left: 68rem;
+}
+
+.A_Tag-Text-Mite {
+  padding-left: 113rem;
+}
+
+.A_Button-ForestState {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 100rem;
+  width: 353rem;
+  min-height: 50rem;
+  border: none;
+  border-radius: 71rem;
+}
+
+.A_TestCard_ContentVar {
+  display: block;
+  width: 27rem;
+  height: auto;
+}
+
+.A_Button-MainArticle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 60rem;
+  width: 267rem;
+  min-height: 50rem;
+  border: none;
+  border-radius: 71rem;
+}
+
+.A_TestCardList_image {
+  display: block;
+  min-height: auto;
+}
+
+.A_Button-Dzen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  width: 45rem;
+  min-height: 45rem;
+  border: 1.5rem solid var(--color-text);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.A_Button-Dzen-img {
+  display: block;
+  width: 20rem;
+  height: auto;
+}
 
 /* ___________________404.html___________________ */
 .A_Heading-NotFound {
@@ -729,7 +837,239 @@ input[type="email"]::placeholder {
 }
 
 /* ___________________index.html___________________ */
+.M_State {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
 
+.M_State-Sunset {
+  padding-left: 600rem;
+}
+
+.M_Passability-Index {
+  align-self: flex-start;
+  display: flex;
+  gap: 40rem;
+}
+
+.M_StateVar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+.M_State-Permafrost {
+  padding-left: 25rem;
+  padding-top: 60rem;
+}
+
+.M_State-Dampness {
+  padding-left: 10rem;
+  padding-top: 80rem;
+}
+
+.M_State-Slush {
+  padding-left: 18rem;
+  padding-top: 25rem;
+}
+
+.M_State-Dirt {
+  position: relative;
+  padding-left: 30rem;
+  margin: -12rem;
+}
+
+.M_StateSky {
+  display: flex;
+  padding-top: 15rem;
+  padding-left: 10rem;
+  align-items: center;
+  gap: 27rem;
+}
+
+.M_StateCloudy {
+  display: flex;
+  padding-top: 22rem;
+  padding-left: 65rem;
+  align-items: center;
+  gap: 27rem;
+}
+
+.M_ForestSky-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+.M_StateAutumn {
+  display: flex;
+  padding-top: 24rem;
+  padding-left: 212rem;
+  align-items: center;
+  gap: 27rem;
+}
+
+.M_State-Other {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+}
+
+.M_Card-CheckList-biotopes {
+  display: flex;
+  align-items: center;
+  padding-top: 160rem;
+  gap: 30rem;
+  min-height: 263rem;
+  width: 263rem;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(ec73982d91fbb52febdc.webp);
+}
+
+.M_Card-CheckList-biotopes:hover {
+  background-image: url(25fb735071b9fcdbf4ed.webp);
+}
+
+.M_Card-CheckList-trail {
+  display: flex;
+  align-items: center;
+  padding-top: 32rem;
+  gap: 145rem;
+  min-height: 263rem;
+  width: 207rem;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(725839556e881b4330c8.webp);
+}
+
+.M_Card-CheckList-trail:hover {
+  background-image: url(2237628b5934283dcf05.webp);
+}
+
+.M_Card-CheckList-seasons {
+  display: flex;
+  align-items: center;
+  padding-top: 160rem;
+  gap: 30rem;
+  min-height: 263rem;
+  width: 263rem;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(5a3754de7b6d03216be4.webp);
+}
+
+.M_Card-CheckList-seasons:hover {
+  background-image: url(be1c4907ad06c59d537b.webp);
+}
+
+.M_Card-CheckList-compass {
+  display: flex;
+  align-items: center;
+  padding-top: 35rem;
+  padding-left: 40rem;
+  gap: 145rem;
+  min-height: 263rem;
+  width: 258rem;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(10d9441dcd9eeda97352.webp);
+}
+
+.M_Card-CheckList-compass:hover {
+  background-image: url(83962254e96621b86ee8.webp);
+}
+
+.M_Card-CheckList-ticks {
+  display: flex;
+  align-items: center;
+  padding-top: 32rem;
+  gap: 145rem;
+  min-height: 263rem;
+  width: 207rem;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(eac85cf744c092609816.webp);
+}
+
+.M_Card-CheckList-ticks:hover {
+  background-image: url(8f8764a712243e6bf10a.webp);
+}
+
+.M_Section-MainContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 5rem;
+}
+
+.M_Articles-CardList {
+  display: flex;
+  justify-content: end;
+  padding: 10rem;
+  width: 297rem;
+  min-height: 173rem;
+  border-radius: 10rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: none;
+}
+
+.M_Articles-CardLis-storm {
+  background-image: url(9c0e678b05ad6b9bcdc3.webp);
+}
+
+.M_Articles-CardLis-boletus {
+  background-image: url(c54e6a90d489a46f2bfd.webp);
+}
+
+.M_Articles-CardLis-fox {
+  background-image: url(89a196be479b82afb54c.webp);
+}
+
+.M_Articles-CardLis-bonfire {
+  background-image: url(5055e1f85690a3a52b9f.webp);
+}
+
+.M_TagItem-Card {
+  position: relative;
+  margin-left: -340rem;
+}
+
+.M_Section_Dzen-Content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30rem;
+}
+
+.M_Articles-CardMedia-Anxiety.visible {
+  background-image: url(87f4b727d6b83df2120f.webp);
+}
+
+.M_Articles-CardMedia-Routes.visible {
+  background-image: url(a57d0b152d1853579222.webp);
+}
+
+.M_Articles-CardMedia-Atmosphere.visible {
+  background-image: url(b9585490f76d1b2ccf08.webp);
+}
 /* ___________________404.html___________________ */
 .M_HeroContent-NotFound {
   gap: 0;
@@ -933,6 +1273,17 @@ input[type="email"]::placeholder {
 
 .M_LearnCard:hover {
   background-color: rgb(19, 53, 36, 0.65);
+}
+
+.M_LearnCard_InWork {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem 10rem 20rem;
+  gap: 20rem;
+  text-decoration: none;
+  background-color: var(--color-card);
+  border-radius: 15rem;
 }
 
 .M_LearnCard-imageWrapper {
@@ -1144,6 +1495,209 @@ input[type="email"]::placeholder {
   gap: 220rem;
   background-image: url(473f1901cb630a9aed33.webp);
   min-height: 807rem;
+}
+
+.O_Calendar {
+  display: flex;
+  flex-direction: column;
+  gap: 70rem;
+  align-items: center;
+}
+
+.O_CalendarState {
+  display: grid;
+  grid-template-columns: 536rem 431rem 353rem;
+  grid-template-rows: 136rem 264rem;
+  gap: 20rem;
+}
+
+.O_Daylight {
+  display: flex;
+  padding: 25rem 35rem;
+  gap: 130rem;
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+  border-radius: 15rem;
+  background-color: var(--color-surface);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(5e52eda8043a0a443173.webp);
+}
+
+.O_ForestState {
+  display: flex;
+  flex-direction: column;
+  padding: 25rem 35rem;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  border-radius: 15rem;
+  background-color: var(--color-surface);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(708c0e5071933c605574.webp);
+}
+
+.O_ForestSky {
+  display: flex;
+  flex-direction: column;
+  padding: 25rem 35rem;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  border-radius: 15rem;
+  background-color: var(--color-surface);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(faa350b253a986bf9e3e.webp);
+}
+.O_ForestOther {
+  display: flex;
+  flex-direction: column;
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  gap: 20rem;
+}
+
+.O_ForestState-Other {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 15rem;
+  min-height: 194rem;
+  padding: 20rem 25rem;
+  background-color: var(--color-surface);
+}
+
+.O_Section-Checklist-Cards {
+  display: flex;
+  gap: 30rem;
+}
+
+.O_Section-MainArticle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 70rem;
+  width: 1360rem;
+  min-height: 500rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(34cca8c4efc2659bd5ae.webp);
+}
+
+.O_Section-ArticlesList {
+  display: flex;
+  flex-direction: column;
+  gap: 40rem;
+  align-items: center;
+}
+
+.O_Section-TestsList {
+  display: flex;
+  flex-direction: column;
+  gap: 40rem;
+  align-items: center;
+}
+
+.O_ArticlesList {
+  display: flex;
+  gap: 30rem;
+}
+
+.O_Articles-CardList {
+  display: flex;
+  flex-direction: column;
+  padding: 10rem;
+  gap: 10rem;
+  width: 317rem;
+  border-radius: 15rem;
+  background-color: var(--color-card);
+}
+
+.O_Section-TestsList_Cards {
+  display: grid;
+  grid-template-columns: repeat(2, 665rem);
+  grid-template-rows: repeat(2, 180rem);
+  gap: 30rem;
+}
+
+.O_Test {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+  padding: 10rem;
+  border-radius: 15rem;
+  background-color: var(--color-card);
+  text-decoration: none;
+}
+
+.O_Test:hover {
+  background-color: rgb(19, 53, 36, 0.65);
+}
+
+.O_TestExam:hover {
+  background-color: rgb(19, 53, 36, 0.65);
+}
+
+.O_TestAttentiveness:hover {
+  background-color: rgb(19, 53, 36, 0.65);
+}
+
+.O_TestExam {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  display: flex;
+  gap: 10rem;
+  padding: 10rem;
+  border-radius: 15rem;
+  background-color: var(--color-card);
+  text-decoration: none;
+}
+
+.O_TestCardList_Content {
+  display: flex;
+  flex-direction: column;
+  gap: 30rem;
+  width: 100%;
+}
+
+.O_TestAttentiveness {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  display: flex;
+  gap: 10rem;
+  padding: 10rem;
+  border-radius: 15rem;
+  background-color: var(--color-card);
+  text-decoration: none;
+}
+
+.O_Section_Dzen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50rem;
+  width: 100%;
+  min-height: 500rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(dd9499179e06e2fec9e2.webp);
+}
+
+.O_InWork {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120rem 40rem;
+  gap: 40rem;
 }
 
 /* ___________________404.html___________________ */

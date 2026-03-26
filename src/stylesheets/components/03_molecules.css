@@ -110,7 +110,239 @@
 }
 
 /* ___________________index.html___________________ */
+.M_State {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
 
+.M_State-Sunset {
+  padding-left: 600rem;
+}
+
+.M_Passability-Index {
+  align-self: flex-start;
+  display: flex;
+  gap: 40rem;
+}
+
+.M_StateVar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+.M_State-Permafrost {
+  padding-left: 25rem;
+  padding-top: 60rem;
+}
+
+.M_State-Dampness {
+  padding-left: 10rem;
+  padding-top: 80rem;
+}
+
+.M_State-Slush {
+  padding-left: 18rem;
+  padding-top: 25rem;
+}
+
+.M_State-Dirt {
+  position: relative;
+  padding-left: 30rem;
+  margin: -12rem;
+}
+
+.M_StateSky {
+  display: flex;
+  padding-top: 15rem;
+  padding-left: 10rem;
+  align-items: center;
+  gap: 27rem;
+}
+
+.M_StateCloudy {
+  display: flex;
+  padding-top: 22rem;
+  padding-left: 65rem;
+  align-items: center;
+  gap: 27rem;
+}
+
+.M_ForestSky-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+.M_StateAutumn {
+  display: flex;
+  padding-top: 24rem;
+  padding-left: 212rem;
+  align-items: center;
+  gap: 27rem;
+}
+
+.M_State-Other {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+}
+
+.M_Card-CheckList-biotopes {
+  display: flex;
+  align-items: center;
+  padding-top: 160rem;
+  gap: 30rem;
+  min-height: 263rem;
+  width: 263rem;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/src/images/Q_Card-CheckList-biotopes.webp");
+}
+
+.M_Card-CheckList-biotopes:hover {
+  background-image: url("/src/images/Q_Card-CheckList-biotopes-hover.webp");
+}
+
+.M_Card-CheckList-trail {
+  display: flex;
+  align-items: center;
+  padding-top: 32rem;
+  gap: 145rem;
+  min-height: 263rem;
+  width: 207rem;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/src/images/Q_Card-CheckList-trail.webp");
+}
+
+.M_Card-CheckList-trail:hover {
+  background-image: url("/src/images/Q_Card-CheckList-trail-hover.webp");
+}
+
+.M_Card-CheckList-seasons {
+  display: flex;
+  align-items: center;
+  padding-top: 160rem;
+  gap: 30rem;
+  min-height: 263rem;
+  width: 263rem;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/src/images/Q_Card-CheckList-seasons.webp");
+}
+
+.M_Card-CheckList-seasons:hover {
+  background-image: url("/src/images/Q_Card-CheckList-seasons-hover.webp");
+}
+
+.M_Card-CheckList-compass {
+  display: flex;
+  align-items: center;
+  padding-top: 35rem;
+  padding-left: 40rem;
+  gap: 145rem;
+  min-height: 263rem;
+  width: 258rem;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/src/images/Q_Card-CheckList-compass.webp");
+}
+
+.M_Card-CheckList-compass:hover {
+  background-image: url("/src/images/Q_Card-CheckList-compass-hover.webp");
+}
+
+.M_Card-CheckList-ticks {
+  display: flex;
+  align-items: center;
+  padding-top: 32rem;
+  gap: 145rem;
+  min-height: 263rem;
+  width: 207rem;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/src/images/Q_Card-CheckList-ticks.webp");
+}
+
+.M_Card-CheckList-ticks:hover {
+  background-image: url("/src/images/Q_Card-CheckList-ticks-hover.webp");
+}
+
+.M_Section-MainContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 5rem;
+}
+
+.M_Articles-CardList {
+  display: flex;
+  justify-content: end;
+  padding: 10rem;
+  width: 297rem;
+  min-height: 173rem;
+  border-radius: 10rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: none;
+}
+
+.M_Articles-CardLis-storm {
+  background-image: url("/src/images/articles/article_storm.webp");
+}
+
+.M_Articles-CardLis-boletus {
+  background-image: url("/src/images/articles/article_boletus.webp");
+}
+
+.M_Articles-CardLis-fox {
+  background-image: url("/src/images/articles/article_fox.webp");
+}
+
+.M_Articles-CardLis-bonfire {
+  background-image: url("/src/images/articles/article_bonfire.webp");
+}
+
+.M_TagItem-Card {
+  position: relative;
+  margin-left: -340rem;
+}
+
+.M_Section_Dzen-Content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30rem;
+}
+
+.M_Articles-CardMedia-Anxiety.visible {
+  background-image: url("/src/images/Q_Articles-CardMedia-Anxiety.webp");
+}
+
+.M_Articles-CardMedia-Routes.visible {
+  background-image: url("/src/images/Q_Articles-CardMedia-Routes.webp");
+}
+
+.M_Articles-CardMedia-Atmosphere.visible {
+  background-image: url("/src/images/Q_Articles-CardMedia-Atmosphere.webp");
+}
 /* ___________________404.html___________________ */
 .M_HeroContent-NotFound {
   gap: 0;
@@ -314,6 +546,17 @@
 
 .M_LearnCard:hover {
   background-color: rgb(19, 53, 36, 0.65);
+}
+
+.M_LearnCard_InWork {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem 10rem 20rem;
+  gap: 20rem;
+  text-decoration: none;
+  background-color: var(--color-card);
+  border-radius: 15rem;
 }
 
 .M_LearnCard-imageWrapper {
