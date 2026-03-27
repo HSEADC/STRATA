@@ -1,6 +1,7 @@
 /* Общие стили */
 .A_Heading-H1,
 .A_Heading-H2,
+.A_Heading-H2-medium,
 .A_Heading-H3,
 .A_Heading-H4,
 .A_Heading-H5,
@@ -28,7 +29,8 @@
 
 /* Medium */
 .A_Heading-H3,
-.A_Heading-H5 {
+.A_Heading-H5,
+.A_Heading-H2-medium {
   font-weight: var(--font-weight-medium);
 }
 
@@ -47,7 +49,8 @@
 .A_Heading-H1 {
   font-size: 50rem;
 }
-.A_Heading-H2 {
+.A_Heading-H2,
+.A_Heading-H2-medium {
   font-size: 36rem;
 }
 .A_Heading-H3 {
@@ -458,5 +461,85 @@
 .A_Test-ExamQuestionIcon {
   display: block;
   width: 20rem;
+  height: auto;
+}
+/* ___________________main_test_mushroom.html___________________ */
+.A_ForestConditions-img {
+  display: block;
+  width: 41rem;
+  height: auto;
+}
+
+.A_ForestConditions-imgSign {
+  display: block;
+  width: 11rem;
+  height: auto;
+}
+
+.A_ForestConditions-Tag {
+  padding: 5rem 25rem;
+  border-radius: 64rem;
+  border: 1.2rem solid var(--color-text);
+}
+.A_ForestConditions-Tag:hover {
+  background-color: var(--color-text);
+  color: var(--color-card);
+  cursor: pointer;
+}
+.A_ForestConditions-Tag-active {
+  background-color: var(--color-text);
+  color: var(--color-card);
+}
+
+.A_ForestConditions-imgVar {
+  display: block;
+  width: 25rem;
+  height: auto;
+}
+
+.A_MonthRecommendation-data {
+  padding-top: 36rem;
+}
+.A_ForestConditionsVar {
+  display: block;
+  width: 18rem;
+  height: auto;
+}
+
+.A_Tag-Text-vertically {
+  padding-left: 18rem;
+  padding-top: 10rem;
+}
+.A_Tag-Text-verticallyVar {
+  padding-left: 17rem;
+  padding-top: 45rem;
+}
+.A_Tag-Text-verticallyVarBad {
+  padding-left: 25rem;
+  padding-top: 45rem;
+}
+
+.A_Tag-Text-ForestConditions {
+  padding-top: 20rem;
+}
+
+.A_MonthRecommendation-dataVar {
+  padding-top: 50rem;
+}
+.A_TagIcon-ImageVar {
+  display: block;
+  width: 16rem;
+  height: auto;
+}
+
+.A_TagIcon-ImageWidth {
+  display: block;
+  width: 28rem;
+  height: auto;
+}
+
+.A_ForestProducts-Card-img {
+  display: block;
+  width: 188rem;
   height: auto;
 }

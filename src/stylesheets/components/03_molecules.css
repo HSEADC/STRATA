@@ -737,3 +737,273 @@
 .M_TagIconAnswer {
   flex-shrink: 0;
 }
+
+/* ___________________main_test_mushroom.html___________________ */
+.M_ForestConditions-Header {
+  display: flex;
+  flex-direction: column;
+  gap: 40rem;
+}
+
+.M_ForestConditions-Month {
+  display: flex;
+  gap: 15rem;
+  align-items: center;
+}
+
+.M_ForestConditions-tegs {
+  display: flex;
+  justify-content: space-between;
+}
+.M_ForestConditions-Seasons {
+  display: flex;
+}
+.M_ForestConditions-Months {
+  display: flex;
+}
+.M_MonthRecommendation {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  gap: 55rem;
+  padding: 15rem 20rem;
+  border-radius: 15rem;
+  background-color: var(--color-card-accent);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/src/images/A_MonthRecommendation-img.webp");
+}
+
+.M_MonthRecommendation-Content {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.M_ForestConditions-Current {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  gap: 53rem;
+  padding: 15rem 20rem;
+  border-radius: 15rem;
+  background-color: var(--color-card-accent);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/src/images/A_ForestConditions-Current-img.webp");
+}
+
+.M_ForestConditions-Current-data {
+  display: flex;
+  gap: 45rem;
+  padding-left: 25rem;
+}
+
+.M_ForestConditions-Content {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 5rem;
+}
+
+.M_ForestTrendChart-vertically {
+  display: flex;
+  flex-direction: column;
+  gap: 12rem;
+}
+
+.M_ForestTrendChart-horizontal {
+  position: relative;
+  top: -20rem;
+  display: flex;
+  padding-left: 200rem;
+  gap: 100rem;
+}
+.M_ForestTrendChart-data {
+  display: flex;
+  gap: 145rem;
+  padding-left: 40rem;
+  padding-top: 8rem;
+}
+.M_ForestTrendChart-state {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  align-items: center;
+}
+.M_ForestStatCards {
+  width: 325rem;
+  min-height: 205rem;
+  background-color: var(--color-surface);
+  border-radius: 15rem;
+  padding: 15rem 20rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/src/images/Q_ForestStatCard.webp");
+}
+.M_ForestStatCards-ContentAll {
+  display: flex;
+  align-items: center;
+  padding-top: 30rem;
+  gap: 140rem;
+}
+.M_ForestStatCards-Content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 5rem;
+}
+.M_ForestStatCardVar {
+  width: 325rem;
+  min-height: 205rem;
+  background-color: var(--color-surface);
+  border-radius: 15rem;
+  padding: 15rem 20rem;
+  background-color: var(--color-surface);
+}
+.M_ForestStatCards-ContentAllVar {
+  display: flex;
+  align-items: center;
+  padding-top: 40rem;
+  padding-left: 40rem;
+  gap: 85rem;
+}
+
+.M_ForestStatCardPrecipitation {
+  display: flex;
+  align-items: center;
+  padding-top: 40rem;
+  padding-left: 15rem;
+  gap: 65rem;
+}
+.M_ForestStatCardWind {
+  display: flex;
+  align-items: center;
+  padding-top: 40rem;
+  padding-left: 15rem;
+  gap: 65rem;
+}
+
+.M_State-Permafrost-Calendar {
+  padding-left: 40rem;
+  padding-top: 30rem;
+}
+
+.M_State-Dampness-Calendar {
+  padding-left: 60rem;
+  padding-top: 40rem;
+}
+
+.M_State-Slush-Calendar {
+  padding-left: 65rem;
+}
+
+.M_State-Dirt-Calendar {
+  position: relative;
+  padding-left: 65rem;
+  top: -20rem;
+}
+
+.M_StateSky-Calendar {
+  display: flex;
+  padding-top: 25rem;
+  padding-left: 75rem;
+  align-items: center;
+  gap: 27rem;
+}
+
+.M_StateCloudy-Calendar {
+  display: flex;
+  padding-top: 22rem;
+  padding-left: 190rem;
+  align-items: center;
+  gap: 27rem;
+}
+
+.M_StateAutumn-Calendar {
+  display: flex;
+  padding-top: 24rem;
+  padding-left: 430rem;
+  align-items: center;
+  gap: 27rem;
+}
+
+.M_ForestActivity-data {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 45rem;
+  padding-top: 80rem;
+  gap: 40rem;
+  row-gap: 95rem;
+}
+
+.M_MonthRecommendation-Content-gap {
+  gap: 5rem;
+}
+
+.M_MonthRecommendation-Content-Birt {
+  padding-left: 65rem;
+}
+
+.M_MonthRecommendation-Content-FlowerSheets {
+  padding-left: 40rem;
+}
+
+.M_MonthRecommendation-Content-Dampness {
+  padding-left: 63rem;
+}
+
+.M_MonthRecommendation-Content-Bear {
+  padding-left: 20rem;
+}
+
+.M_MonthRecommendation-Content-Tree {
+  padding-left: 5rem;
+}
+
+.M_ForestRisks_Data {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+  align-items: center;
+  text-align: center;
+}
+.M_ForestRisks_DataText {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+  text-align: center;
+}
+
+.M_ForestProducts-Cards {
+  display: flex;
+  gap: 20rem;
+}
+
+.M_ForestProducts-gap {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+}
+.M_ForestProducts-Card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 208rem;
+  min-height: 244rem;
+  padding: 10rem;
+  gap: 10rem;
+  background-color: var(--color-card);
+  border-radius: 15rem;
+}

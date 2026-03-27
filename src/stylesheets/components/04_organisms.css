@@ -466,3 +466,115 @@
   background-color: var(--color-card);
   border-radius: 15rem;
 }
+
+/* ___________________main_test_mushroom.html___________________ */
+.O_Header-calendar {
+  gap: 200rem;
+  background-image: url("/src/images/calendar-bg.png");
+  min-height: 695rem;
+}
+.O_ForestConditions {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+}
+.O_ForestConditions-Month {
+  display: grid;
+  grid-template-columns: 360rem 980rem;
+  grid-template-rows: repeat(2, 230rem);
+  gap: 20rem;
+}
+.O_ForestTrendChart {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  display: flex;
+  flex-direction: column;
+  gap: 40rem;
+  padding: 15rem 20rem;
+  border-radius: 15rem;
+  background-color: var(--color-card-accent);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/src/images/Q_ForestTrendChart-img.webp");
+}
+.O_ForestStatCards {
+  display: flex;
+  gap: 20rem;
+}
+.O_ForestStatOther {
+  display: grid;
+  grid-template-columns: repeat(2, 670rem);
+  grid-template-rows: repeat(2, 260rem);
+  gap: 20rem;
+}
+.O_ForestState-Calendar {
+  display: flex;
+  flex-direction: column;
+  padding: 15rem 20rem;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  border-radius: 15rem;
+  background-color: var(--color-surface);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/src/images/Q_ForestState-Calendar.webp");
+}
+.O_ForestSky-Calendar {
+  display: flex;
+  flex-direction: column;
+  padding: 15rem 20rem;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  border-radius: 15rem;
+  background-color: var(--color-surface);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/src/images/Q_ForestSky-Calendar.webp");
+}
+.O_ForestActivity {
+  display: flex;
+  flex-direction: column;
+  padding: 15rem 20rem;
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  border-radius: 15rem;
+  background-color: var(--color-surface);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/src/images/Q_ForestActivity.webp");
+}
+.O_ForestRisks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding: 170rem 230rem;
+  gap: 40rem;
+  width: 100%;
+  min-height: 650rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/src/images/Q_ForestRisks-img.webp");
+}
+
+.O_ForestProducts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120rem 40rem;
+  gap: 40rem;
+}
+.O_ForestProducts-List {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  row-gap: 60rem;
+  column-gap: 30rem;
+}
+.O_Section-Checklist-Calendar {
+  padding-bottom: 120rem;
+}
