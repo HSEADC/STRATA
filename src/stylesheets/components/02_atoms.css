@@ -273,7 +273,9 @@
   display: block;
   min-height: auto;
 }
-
+.A_TestCardList_image-iphone {
+  display: none;
+}
 .A_Button-Dzen {
   display: flex;
   align-items: center;
@@ -290,6 +292,10 @@
   display: block;
   width: 20rem;
   height: auto;
+}
+
+.A_Articles-CardList-Arrow {
+  display: none;
 }
 
 /* ___________________404.html___________________ */
@@ -355,7 +361,9 @@
   width: 300rem;
   height: auto;
 }
-
+.A_TestCard_image-iphone {
+  display: none;
+}
 .A_TestCard_ContentButton {
   display: flex;
   justify-content: center;

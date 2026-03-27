@@ -83,6 +83,15 @@
             />
           </span>
         </button>
+        <button class="M_burger-icon">
+          <span class="A_InnerCircle">
+            <img
+              class="A_burger-icon"
+              src="../images/icons/Q_burger-icon.svg"
+              alt="Иконка свернутого меню"
+            />
+          </span>
+        </button>
       </nav>
       <div class="M_HeroContent M_HeroContent-articles">
         <h1 class="A_Heading-H1">статьи</h1>
@@ -96,15 +105,15 @@
           </div>
           <span class="A_Tag A_Navigation-Text"> Советы </span>
           <span class="A_Tag A_Navigation-Text"> Чек-листы </span>
-          <div class="M_TagIcon">
+          <div class="M_TagIcon M_TagIcon-none">
             <img
               class="A_TagIcon-Image"
               src="/src/images/icons/Q_Icon_Sheets.svg"
               alt="Иконка листьев травы"
             />
           </div>
-          <span class="A_Tag A_Navigation-Text"> Гайды </span>
-          <div class="M_TagIcon">
+          <span class="A_Tag A_Navigation-Text M_TagIcon-none"> Гайды </span>
+          <div class="M_TagIcon M_TagIcon-none">
             <img
               class="A_TagIcon-Image"
               src="/src/images/icons/Q_Icon_DirectionVar.svg"
@@ -116,7 +125,7 @@
     </header>
     <main class="O_Main">
       <section class="O_Section-Checklist">
-        <h2 class="A_Heading-H2">Лесной чек-лист</h2>
+        <h2 class="A_Heading-H2">Лесной чек-лист на Март</h2>
         <div class="O_Section-Checklist-Cards">
           <a href="#" class="A_Link"
             ><div class="M_Card-CheckList-biotopes">
@@ -163,7 +172,7 @@
               </button></div
           ></a>
           <a href="#" class="A_Link"
-            ><div class="M_Card-CheckList-ticks">
+            ><div class="M_Card-CheckList-ticks A_Link-CheckList-ticks">
               <h4 class="A_Heading-H4">Клещи</h4>
               <button class="A_TestCard_ContentButton A_Button">
                 <img
@@ -293,8 +302,10 @@
         </div>
         <div class="O_Articles-Grid">
           <article class="O_Articles-Card all tegSafety">
-            <div class="M_Articles-CardMedia M_Articles-ticks">
-              <span class="M_TagItem M_TagItem-Article">
+            <div
+              class="M_Articles-CardMedia M_Articles-ticks M_Articles-CardMedia-iphone"
+            >
+              <span class="M_TagItem M_TagItem-Article M_TagIcon-none">
                 <img
                   class="A_TagItem-Image"
                   src="/src/images/icons/Q_Icon_Time_border.svg"
@@ -321,7 +332,7 @@
               <a
                 href="../articles_download/article_ticks.pdf"
                 download="article_ticks.pdf"
-                class="M_TagItem M_Download-Button M_Button"
+                class="M_TagItem M_Download-Button M_Button M_TagIcon-none"
               >
                 <span class="A_Tag-Text A_Tag-TextDownload">Скачать</span>
                 <img
@@ -331,10 +342,17 @@
                 />
               </a>
             </div>
+            <img
+              class="A_Articles-CardList-Arrow"
+              src="../images/icons/Q_Icon_Arrow-White.svg"
+              alt="Иконка стрелки"
+            />
           </article>
           <article class="O_Articles-Card all tegSafety">
-            <div class="M_Articles-CardMedia M_Articles-storm">
-              <span class="M_TagItem M_TagItem-Article">
+            <div
+              class="M_Articles-CardMedia M_Articles-storm M_Articles-CardMedia-iphone"
+            >
+              <span class="M_TagItem M_TagItem-Article M_TagIcon-none">
                 <img
                   class="A_TagItem-Image"
                   src="/src/images/icons/Q_Icon_Time_border.svg"
@@ -361,7 +379,7 @@
               <a
                 href="../articles_download/article_storm.pdf"
                 download="article_storm.pdf"
-                class="M_TagItem M_Download-Button M_Button"
+                class="M_TagItem M_Download-Button M_Button M_TagIcon-none"
               >
                 <span class="A_Tag-Text A_Tag-TextDownload">Скачать</span>
                 <img
@@ -371,10 +389,17 @@
                 />
               </a>
             </div>
+            <img
+              class="A_Articles-CardList-Arrow"
+              src="../images/icons/Q_Icon_Arrow-White.svg"
+              alt="Иконка стрелки"
+            />
           </article>
           <article class="O_Articles-Card all tegNavigation">
-            <div class="M_Articles-CardMedia M_Articles-compass">
-              <span class="M_TagItem M_TagItem-Article">
+            <div
+              class="M_Articles-CardMedia M_Articles-compass M_Articles-CardMedia-iphone"
+            >
+              <span class="M_TagItem M_TagItem-Article M_TagIcon-none">
                 <img
                   class="A_TagItem-Image"
                   src="/src/images/icons/Q_Icon_Time_border.svg"
@@ -403,7 +428,7 @@
               <a
                 href="../articles_download/article_compass.pdf"
                 download="article_compass.pdf"
-                class="M_TagItem M_Download-Button M_Button"
+                class="M_TagItem M_Download-Button M_Button M_TagIcon-none"
               >
                 <span class="A_Tag-Text A_Tag-TextDownload">Скачать</span>
                 <img
@@ -413,10 +438,17 @@
                 />
               </a>
             </div>
+            <img
+              class="A_Articles-CardList-Arrow"
+              src="../images/icons/Q_Icon_Arrow-White.svg"
+              alt="Иконка стрелки"
+            />
           </article>
           <article class="O_Articles-Card all tegNavigation">
-            <div class="M_Articles-CardMedia M_Articles-trail">
-              <span class="M_TagItem M_TagItem-Article">
+            <div
+              class="M_Articles-CardMedia M_Articles-trail M_Articles-CardMedia-iphone"
+            >
+              <span class="M_TagItem M_TagItem-Article M_TagIcon-none">
                 <img
                   class="A_TagItem-Image"
                   src="/src/images/icons/Q_Icon_Time_border.svg"
@@ -443,7 +475,7 @@
               <a
                 href="../articles_download/article_trail.pdf"
                 download="article_trail.pdf"
-                class="M_TagItem M_Download-Button M_Button"
+                class="M_TagItem M_Download-Button M_Button M_TagIcon-none"
               >
                 <span class="A_Tag-Text A_Tag-TextDownload">Скачать</span>
                 <img
@@ -453,10 +485,17 @@
                 />
               </a>
             </div>
+            <img
+              class="A_Articles-CardList-Arrow"
+              src="../images/icons/Q_Icon_Arrow-White.svg"
+              alt="Иконка стрелки"
+            />
           </article>
           <article class="O_Articles-Card all tegEquipment">
-            <div class="M_Articles-CardMedia M_Articles-backpack">
-              <span class="M_TagItem M_TagItem-Article">
+            <div
+              class="M_Articles-CardMedia M_Articles-backpack M_Articles-CardMedia-iphone"
+            >
+              <span class="M_TagItem M_TagItem-Article M_TagIcon-none">
                 <img
                   class="A_TagItem-Image"
                   src="/src/images/icons/Q_Icon_Time_border.svg"
@@ -483,7 +522,7 @@
               <a
                 href="../articles_download/article_backpack.pdf"
                 download="article_backpack.pdf"
-                class="M_TagItem M_Download-Button M_Button"
+                class="M_TagItem M_Download-Button M_Button M_TagIcon-none"
               >
                 <span class="A_Tag-Text A_Tag-TextDownload">Скачать</span>
                 <img
@@ -493,10 +532,17 @@
                 />
               </a>
             </div>
+            <img
+              class="A_Articles-CardList-Arrow"
+              src="../images/icons/Q_Icon_Arrow-White.svg"
+              alt="Иконка стрелки"
+            />
           </article>
           <article class="O_Articles-Card all tegEquipment">
-            <div class="M_Articles-CardMedia M_Articles-clothing">
-              <span class="M_TagItem M_TagItem-Article">
+            <div
+              class="M_Articles-CardMedia M_Articles-clothing M_Articles-CardMedia-iphone"
+            >
+              <span class="M_TagItem M_TagItem-Article M_TagIcon-none">
                 <img
                   class="A_TagItem-Image"
                   src="/src/images/icons/Q_Icon_Time_border.svg"
@@ -523,7 +569,7 @@
               <a
                 href="../articles_download/article_clothing.pdf"
                 download="article_clothing.pdf"
-                class="M_TagItem M_Download-Button M_Button"
+                class="M_TagItem M_Download-Button M_Button M_TagIcon-none"
               >
                 <span class="A_Tag-Text A_Tag-TextDownload">Скачать</span>
                 <img
@@ -533,10 +579,17 @@
                 />
               </a>
             </div>
+            <img
+              class="A_Articles-CardList-Arrow"
+              src="../images/icons/Q_Icon_Arrow-White.svg"
+              alt="Иконка стрелки"
+            />
           </article>
           <article class="O_Articles-Card all tegFeed">
-            <div class="M_Articles-CardMedia M_Articles-bonfire">
-              <span class="M_TagItem M_TagItem-Article">
+            <div
+              class="M_Articles-CardMedia M_Articles-bonfire M_Articles-CardMedia-iphone"
+            >
+              <span class="M_TagItem M_TagItem-Article M_TagIcon-none">
                 <img
                   class="A_Test-Image"
                   src="/src/images/icons/Q_Icon_Time_border.svg"
@@ -563,7 +616,7 @@
               <a
                 href="../articles_download/article_fire.pdf"
                 download="article_fire.pdf"
-                class="M_TagItem M_Download-Button M_Button"
+                class="M_TagItem M_Download-Button M_Button M_TagIcon-none"
               >
                 <span class="A_Tag-Text A_Tag-TextDownload">Скачать</span>
                 <img
@@ -573,10 +626,17 @@
                 />
               </a>
             </div>
+            <img
+              class="A_Articles-CardList-Arrow"
+              src="../images/icons/Q_Icon_Arrow-White.svg"
+              alt="Иконка стрелки"
+            />
           </article>
           <article class="O_Articles-Card all tegFeed">
-            <div class="M_Articles-CardMedia M_Articles-tea">
-              <span class="M_TagItem M_TagItem-Article">
+            <div
+              class="M_Articles-CardMedia M_Articles-tea M_Articles-CardMedia-iphone"
+            >
+              <span class="M_TagItem M_TagItem-Article M_TagIcon-none">
                 <img
                   class="A_TagItem-Image"
                   src="/src/images/icons/Q_Icon_Time_border.svg"
@@ -603,7 +663,7 @@
               <a
                 href="../articles_download/article_tea.pdf"
                 download="article_tea.pdf"
-                class="M_TagItem M_Download-Button M_Button"
+                class="M_TagItem M_Download-Button M_Button M_TagIcon-none"
               >
                 <span class="A_Tag-Text A_Tag-TextDownload">Скачать</span>
                 <img
@@ -613,10 +673,17 @@
                 />
               </a>
             </div>
+            <img
+              class="A_Articles-CardList-Arrow"
+              src="../images/icons/Q_Icon_Arrow-White.svg"
+              alt="Иконка стрелки"
+            />
           </article>
           <article class="O_Articles-Card all tegExpertise">
-            <div class="M_Articles-CardMedia M_Articles-seasons">
-              <span class="M_TagItem M_TagItem-Article">
+            <div
+              class="M_Articles-CardMedia M_Articles-seasons M_Articles-CardMedia-iphone"
+            >
+              <span class="M_TagItem M_TagItem-Article M_TagIcon-none">
                 <img
                   class="A_TagItem-Image"
                   src="/src/images/icons/Q_Icon_Time_border.svg"
@@ -643,7 +710,7 @@
               <a
                 href="../articles_download/article_seasons.pdf"
                 download="article_seasons.pdf"
-                class="M_TagItem M_Download-Button M_Button"
+                class="M_TagItem M_Download-Button M_Button M_TagIcon-none"
               >
                 <span class="A_Tag-Text A_Tag-TextDownload">Скачать</span>
                 <img
@@ -653,10 +720,17 @@
                 />
               </a>
             </div>
+            <img
+              class="A_Articles-CardList-Arrow"
+              src="../images/icons/Q_Icon_Arrow-White.svg"
+              alt="Иконка стрелки"
+            />
           </article>
           <article class="O_Articles-Card all tegExpertise">
-            <div class="M_Articles-CardMedia M_Articles-biotopes">
-              <span class="M_TagItem M_TagItem-Article">
+            <div
+              class="M_Articles-CardMedia M_Articles-biotopes M_Articles-CardMedia-iphone"
+            >
+              <span class="M_TagItem M_TagItem-Article M_TagIcon-none">
                 <img
                   class="A_TagItem-Image"
                   src="/src/images/icons/Q_Icon_Time_border.svg"
@@ -683,7 +757,7 @@
               <a
                 href="../articles_download/article_biotopes.pdf"
                 download="article_biotopes.pdf"
-                class="M_TagItem M_Download-Button M_Button"
+                class="M_TagItem M_Download-Button M_Button M_TagIcon-none"
               >
                 <span class="A_Tag-Text A_Tag-TextDownload">Скачать</span>
                 <img
@@ -693,10 +767,17 @@
                 />
               </a>
             </div>
+            <img
+              class="A_Articles-CardList-Arrow"
+              src="../images/icons/Q_Icon_Arrow-White.svg"
+              alt="Иконка стрелки"
+            />
           </article>
           <article class="O_Articles-Card all tegMycology">
-            <div class="M_Articles-CardMedia M_Articles-boletus">
-              <span class="M_TagItem M_TagItem-Article">
+            <div
+              class="M_Articles-CardMedia M_Articles-boletus M_Articles-CardMedia-iphone"
+            >
+              <span class="M_TagItem M_TagItem-Article M_TagIcon-none">
                 <img
                   class="A_TagItem-Image"
                   src="/src/images/icons/Q_Icon_Time_border.svg"
@@ -723,7 +804,7 @@
               <a
                 href="../articles_download/article_borovik.pdf"
                 download="article_borovik.pdf"
-                class="M_TagItem M_Download-Button M_Button"
+                class="M_TagItem M_Download-Button M_Button M_TagIcon-none"
               >
                 <span class="A_Tag-Text A_Tag-TextDownload">Скачать</span>
                 <img
@@ -733,10 +814,17 @@
                 />
               </a>
             </div>
+            <img
+              class="A_Articles-CardList-Arrow"
+              src="../images/icons/Q_Icon_Arrow-White.svg"
+              alt="Иконка стрелки"
+            />
           </article>
           <article class="O_Articles-Card all tegMycology">
-            <div class="M_Articles-CardMedia M_Articles-fox">
-              <span class="M_TagItem M_TagItem-Article">
+            <div
+              class="M_Articles-CardMedia M_Articles-fox M_Articles-CardMedia-iphone"
+            >
+              <span class="M_TagItem M_TagItem-Article M_TagIcon-none">
                 <img
                   class="A_TagItem-Image"
                   src="/src/images/icons/Q_Icon_Time_border.svg"
@@ -763,7 +851,7 @@
               <a
                 href="../articles_download/article_fox.pdf"
                 download="article_fox.pdf"
-                class="M_TagItem M_Download-Button M_Button"
+                class="M_TagItem M_Download-Button M_Button M_TagIcon-none"
               >
                 <span class="A_Tag-Text A_Tag-TextDownload">Скачать</span>
                 <img
@@ -773,6 +861,11 @@
                 />
               </a>
             </div>
+            <img
+              class="A_Articles-CardList-Arrow"
+              src="../images/icons/Q_Icon_Arrow-White.svg"
+              alt="Иконка стрелки"
+            />
           </article>
         </div>
         <button class="M_Button-more A_Button">

@@ -85,10 +85,19 @@
             />
           </span>
         </button>
+        <button class="M_burger-icon">
+          <span class="A_InnerCircle">
+            <img
+              class="A_burger-icon"
+              src="./images/icons/Q_burger-icon.svg"
+              alt="Иконка свернутого меню"
+            />
+          </span>
+        </button>
       </nav>
       <div class="M_HeroContent">
         <h1 class="A_Heading-H1">ваш проводник в лесную культуру</h1>
-        <p class="A_Paragraph">
+        <p class="A_Paragraph A_Paragraph-HeroContent">
           Превращаем дикую природу в безопасное <br />
           и стильное пространство для исследований
         </p>
@@ -103,7 +112,7 @@
           </div>
           <span class="A_Tag A_Navigation-Text"> Микология </span>
           <span class="A_Tag A_Navigation-Text"> Экипировка </span>
-          <div class="M_TagIcon">
+          <div class="M_TagIcon M_TagIcon-none">
             <img
               class="A_TagIcon-Image"
               src="./images/icons/Q_Icon_Sheets.svg"
@@ -120,7 +129,7 @@
         <div class="O_CalendarState">
           <div class="O_Daylight">
             <h4 class="A_Heading-H4">Световой день в лесу</h4>
-            <div class="M_State">
+            <div class="M_State M_State_Sunrise">
               <img
                 src="./images/icons/Q_Icon_Sunrise.svg"
                 class="A_State_img"
@@ -270,9 +279,9 @@
         </div>
       </section>
       <section class="O_Section-Checklist">
-        <h2 class="A_Heading-H2">Лесной чек-лист</h2>
+        <h2 class="A_Heading-H2">Лесной чек-лист на Март</h2>
         <div class="O_Section-Checklist-Cards">
-          <a href="#" class="A_Link"
+          <a href="#" class="A_Link A_Link-CheckList-biotopes"
             ><div class="M_Card-CheckList-biotopes">
               <h4 class="A_Heading-H4">Где растут грибы</h4>
               <button class="A_TestCard_ContentButton A_Button">
@@ -283,7 +292,7 @@
                 />
               </button></div
           ></a>
-          <a href="#" class="A_Link"
+          <a href="#" class="A_Link A_Link-CheckList-trail"
             ><div class="M_Card-CheckList-trail">
               <h4 class="A_Heading-H4">Тропа</h4>
               <button class="A_TestCard_ContentButton A_Button">
@@ -294,7 +303,7 @@
                 />
               </button></div
           ></a>
-          <a href="#" class="A_Link"
+          <a href="#" class="A_Link A_Link-CheckList-seasons"
             ><div class="M_Card-CheckList-seasons">
               <h4 class="A_Heading-H4">Что искать в лесу</h4>
               <button class="A_TestCard_ContentButton A_Button">
@@ -305,7 +314,7 @@
                 />
               </button></div
           ></a>
-          <a href="#" class="A_Link"
+          <a href="#" class="A_Link A_Link-CheckList-compass"
             ><div class="M_Card-CheckList-compass">
               <h4 class="A_Heading-H4">Компас</h4>
               <button class="A_TestCard_ContentButton A_Button">
@@ -316,7 +325,7 @@
                 />
               </button></div
           ></a>
-          <a href="#" class="A_Link"
+          <a href="#" class="A_Link A_Link-CheckList-ticks"
             ><div class="M_Card-CheckList-ticks">
               <h4 class="A_Heading-H4">Клещи</h4>
               <button class="A_TestCard_ContentButton A_Button">
@@ -330,7 +339,7 @@
         </div>
       </section>
       <section class="O_Section-MainArticle">
-        <span class="M_TagItem M_TagItem-Article">
+        <span class="M_TagItem M_TagItem-Article M_TagItem-MainArticle">
           <img
             class="A_TagItem-Image"
             src="/src/images/icons/Q_Icon_Compass_border.svg"
@@ -339,8 +348,8 @@
           <span class="A_Tag-Text">экипировка</span>
         </span>
         <div class="M_Section-MainContent">
-          <h2 class="A_Heading-H2">Многослойность и защита</h2>
-          <p class="A_Paragraph">
+          <h2 class="A_Heading-H2 A_Heading-H2-MainArticle">Многослойность и защита</h2>
+          <p class="A_Paragraph A_Paragraph-MainArticle">
             Как комбинировать слои <br />одежды для комфорта <br />в
             переменчивую погоду
           </p>
@@ -360,7 +369,7 @@
         <div class="O_ArticlesList">
           <article class="O_Articles-CardList">
             <div class="M_Articles-CardList M_Articles-CardLis-boletus">
-              <span class="M_TagItem M_TagItem-Article">
+              <span class="M_TagItem M_TagItem-Article M_TagItem-CardList">
                 <img
                   class="A_TagItem-Image"
                   src="/src/images/icons/Q_Icon_Time_border.svg"
@@ -383,10 +392,11 @@
                 <span class="A_Tag-Text">микология</span>
               </span>
             </div>
+            <img class="A_Articles-CardList-Arrow" src="./images/icons/Q_Icon_Arrow-White.svg" alt="Иконка стрелки">
           </article>
           <article class="O_Articles-CardList">
             <div class="M_Articles-CardList M_Articles-CardLis-storm">
-              <span class="M_TagItem M_TagItem-Article">
+              <span class="M_TagItem M_TagItem-Article M_TagItem-CardList">
                 <img
                   class="A_TagItem-Image"
                   src="/src/images/icons/Q_Icon_Time_border.svg"
@@ -409,10 +419,11 @@
                 <span class="A_Tag-Text">безопасность</span>
               </span>
             </div>
+            <img class="A_Articles-CardList-Arrow" src="./images/icons/Q_Icon_Arrow-White.svg" alt="Иконка стрелки">
           </article>
           <article class="O_Articles-CardList">
             <div class="M_Articles-CardList M_Articles-CardLis-fox">
-              <span class="M_TagItem M_TagItem-Article">
+              <span class="M_TagItem M_TagItem-Article M_TagItem-CardList">
                 <img
                   class="A_TagItem-Image"
                   src="/src/images/icons/Q_Icon_Time_border.svg"
@@ -435,10 +446,11 @@
                 <span class="A_Tag-Text">микология</span>
               </span>
             </div>
+            <img class="A_Articles-CardList-Arrow" src="./images/icons/Q_Icon_Arrow-White.svg" alt="Иконка стрелки">
           </article>
           <article class="O_Articles-CardList">
             <div class="M_Articles-CardList M_Articles-CardLis-bonfire">
-              <span class="M_TagItem M_TagItem-Article">
+              <span class="M_TagItem M_TagItem-Article M_TagItem-CardList">
                 <img
                   class="A_TagItem-Image"
                   src="/src/images/icons/Q_Icon_Time_border.svg"
@@ -461,6 +473,7 @@
                 <span class="A_Tag-Text">питание</span>
               </span>
             </div>
+            <img class="A_Articles-CardList-Arrow" src="./images/icons/Q_Icon_Arrow-White.svg" alt="Иконка стрелки">
           </article>
         </div>
         <a href="./pages/articles.html" class="A_Link"
@@ -472,15 +485,21 @@
       <section class="O_Section-TestsList">
         <h2 class="A_Heading-H2">Прокачиваем навыки</h2>
         <div class="O_Section-TestsList_Cards">
-          <a href="./pages/interactive/main_test_mushroom.html" class="O_Test">
+          <a href="./pages/interactive/main_test_mushroom.html" class="O_Test_Var">
             <img
               src="./images/Q_TestCard_Mushrooms.webp"
               alt="Изображение двух грибов в лесу"
               class="A_TestCardList_image"
               loading="lazy"
             />
-            <div class="M_TestCard_ContentTags">
-              <span class="M_TagItem M_TagItem-Article">
+            <img
+              src="./images/Q_TestCard_Mushrooms-iphone.webp"
+              alt="Изображение двух грибов в лесу"
+              class="A_TestCardList_image-iphone"
+              loading="lazy"
+            />
+            <div class="M_TestCard_ContentTags M_TagItem-iphone">
+              <span class="M_TagItem M_TagItem-Article ">
                 <img
                   class="A_TagItem-Image"
                   src="/src/images/icons/Q_Icon_Sheets_border.svg"
@@ -488,7 +507,7 @@
                 />
                 <span class="A_Tag-Text">экспертиза</span>
               </span>
-              <span class="M_TagItem M_TagItem-Article M_TagItem-Card">
+              <span class="M_TagItem M_TagItem-Article M_TagItem-Card M_TagItem-Article-iphone">
                 <img
                   class="A_TagItem-Image"
                   src="/src/images/icons/Q_Icon_Flower_border.svg"
@@ -506,12 +525,13 @@
             </div>
             <div class="M_TestCard_Discription">
               <h4 class="A_Heading-H4">Съедобное или... нет?</h4>
-              <p class="A_Paragraph_Secondary">
+              <p class="A_Paragraph_Secondary A_Paragraph-HeroContent">
                 Диджитал-тренажер по грибам и ягодам. Научись отличать лисичку
                 от её коварного двойника по одному фото, пока ты еще дома на
                 диване
               </p>
             </div>
+             <img class="A_Articles-CardList-Arrow" src="./images/icons/Q_Icon_Arrow-White.svg" alt="Иконка стрелки">
           </a>
           <a
             href="./pages/interactive/main_test1_questions.html"
@@ -521,6 +541,12 @@
               src="./images/test_exam.webp"
               alt="Изображение женщины в лесу с картой"
               class="A_TestCard_image"
+              loading="lazy"
+            />
+            <img
+              src="./images/test_exam-iphone.webp"
+              alt="Изображение женщины в лесу с картой"
+              class="A_TestCard_image-iphone"
               loading="lazy"
             />
             <div class="O_TestCardList_Content">
@@ -543,12 +569,13 @@
               </div>
               <div class="M_TestCard_Discription">
                 <h4 class="A_Heading-H4">Лесной экзамен</h4>
-                <p class="A_Paragraph_Secondary">
+                <p class="A_Paragraph_Secondary A_Paragraph-HeroContent">
                   Проверь, не превратишься ли ты <br />
                   в «потеряшку» при виде первой сосны
                 </p>
               </div>
             </div>
+             <img class="A_Articles-CardList-Arrow" src="./images/icons/Q_Icon_Arrow-White.svg" alt="Иконка стрелки">
           </a>
           <a
             href="./pages/interactive/main_test2_questions.html"
@@ -560,7 +587,13 @@
               class="A_TestCard_image"
               loading="lazy"
             />
-            <div class="O_TestCardList_Content">
+            <img
+              src="./images/test_attentiveness-iphone.webp"
+              alt="Изображение мужчины в лесу, рассматривающего грибы"
+              class="A_TestCard_image-iphone"
+              loading="lazy"
+            />
+            <div class="O_TestCardList_Content ">
               <div class="M_TestCard_ContentTags">
                 <span class="M_TagItem M_TagItem-Article">
                   <img
@@ -580,13 +613,15 @@
               </div>
               <div class="M_TestCard_Discription">
                 <h4 class="A_Heading-H4">Лесная внимательность</h4>
-                <p class="A_Paragraph_Secondary">
+                <p class="A_Paragraph_Secondary A_Paragraph-HeroContent">
                   Проверь, замечаешь ли ты важные <br />детали во время прогулки
                   по лесу
                 </p>
               </div>
             </div>
+            <img class="A_Articles-CardList-Arrow" src="./images/icons/Q_Icon_Arrow-White.svg" alt="Иконка стрелки">
           </a>
+           
         </div>
         <a href="./pages/interactive.html" class="A_Link"
           ><button class="M_Button-more A_Button">
@@ -605,7 +640,7 @@
             /></button>
       </div>
       <div class="M_TagGroup">
-        <div class="M_TagIcon">
+        <div class="M_TagIcon M_TagIcon-none">
             <img
               class="A_TagIcon-Image"
               src="./images/icons/Q_Icon_FlowerSheets.svg"
@@ -613,7 +648,7 @@
             />
           </div>
           <span class="A_Tag A_Navigation-Text"> Лайфхаки </span>
-          <div class="M_TagIcon">
+          <div class="M_TagIcon M_TagIcon-none">
             <img
               class="A_TagIcon-Image"
               src="./images/icons/Q_Icon_WateringCan.svg"
@@ -640,16 +675,16 @@
               class="M_Articles-CardMedia M_LearnCard-imageWrapper M_Articles-CardMedia-Anxiety"
             >
             </div>
-            <h3 class="A_Heading-H3">Тревога в природе</h3>
+            <h3 class="A_Heading-H3 A_Heading-H3-iphone">Тревога в природе</h3>
           </div>
           <div class="M_LearnCard_InWork">
             <div
               class="M_Articles-CardMedia M_LearnCard-imageWrapper M_Articles-CardMedia-Routes"
             >
             </div>
-            <h3 class="A_Heading-H3">Маршруты</h3>
+            <h3 class="A_Heading-H3 A_Heading-H3-iphone">Маршруты</h3>
           </div>
-          <div class="M_LearnCard_InWork">
+          <div class="M_LearnCard_InWork M_LearnCard_InWork-iphone">
             <div
               class="M_Articles-CardMedia M_LearnCard-imageWrapper M_Articles-CardMedia-Atmosphere"
             >

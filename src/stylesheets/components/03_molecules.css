@@ -343,6 +343,10 @@
 .M_Articles-CardMedia-Atmosphere.visible {
   background-image: url("/src/images/Q_Articles-CardMedia-Atmosphere.webp");
 }
+
+.M_burger-icon {
+  display: none;
+}
 /* ___________________404.html___________________ */
 .M_HeroContent-NotFound {
   gap: 0;
@@ -436,9 +440,6 @@
 }
 .M_Articles-storm.visible {
   background-image: url("/src/images/articles/article_storm.webp");
-}
-.M_Articles-compass.visible {
-  background-image: url("/src/images/articles/article_compass.webp");
 }
 .M_Articles-compass.visible {
   background-image: url("/src/images/articles/article_compass.webp");
@@ -716,6 +717,10 @@
   border: none;
   text-align: start;
   cursor: pointer;
+}
+
+.M_Test-ExamQuestion:hover {
+  background-color: rgb(19, 53, 36, 0.65);
 }
 
 .M_Test-ExamQuestion.is-selected {

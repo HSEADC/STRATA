@@ -81,6 +81,15 @@
             />
           </span>
         </button>
+        <button class="M_burger-icon">
+          <span class="A_InnerCircle">
+            <img
+              class="A_burger-icon"
+              src="../images/icons/Q_burger-icon.svg"
+              alt="Иконка свернутого меню"
+            />
+          </span>
+        </button>
       </nav>
       <div class="M_HeroContent M_HeroContent-articles">
         <h1 class="A_Heading-H1">интерактивы</h1>
@@ -94,7 +103,7 @@
             />
           </div>
           <span class="A_Tag A_Navigation-Text"> Тренажеры </span>
-          <div class="M_TagIcon">
+          <div class="M_TagIcon M_TagIcon-none">
             <img
               class="A_TagIcon-Image"
               src="/src/images/icons/Q_Icon_Hand.svg"
@@ -111,6 +120,12 @@
             src="/src/images/test_exam.webp"
             alt="Изображение женщины в лесу с картой"
             class="A_TestCard_image"
+            loading="lazy"
+          />
+          <img
+            src="../images/test_exam-iphone.webp"
+            alt="Изображение женщины в лесу с картой"
+            class="A_TestCard_image-iphone"
             loading="lazy"
           />
           <div class="O_TestCard_Content">
@@ -133,18 +148,29 @@
             </div>
             <div class="M_TestCard_Discription">
               <h4 class="A_Heading-H4">Лесной экзамен</h4>
-              <p class="A_Paragraph_Secondary">
+              <p class="A_Paragraph_Secondary A_Paragraph-HeroContent">
                 Проверь, не превратишься ли ты <br />в «потеряшку» при виде
                 первой сосны
               </p>
             </div>
           </div>
+          <img
+            class="A_Articles-CardList-Arrow"
+            src="../images/icons/Q_Icon_Arrow-White.svg"
+            alt="Иконка стрелки"
+          />
         </a>
         <a href="./interactive/main_test2_questions.html" class="O_TestCard">
           <img
             src="/src/images/test_attentiveness.webp"
             alt="Изображение мужчины в лесу, рассматривающего грибы"
             class="A_TestCard_image"
+            loading="lazy"
+          />
+          <img
+            src="../images/test_attentiveness-iphone.webp"
+            alt="Изображение мужчины в лесу, рассматривающего грибы"
+            class="A_TestCard_image-iphone"
             loading="lazy"
           />
           <div class="O_TestCard_Content">
@@ -167,12 +193,17 @@
             </div>
             <div class="M_TestCard_Discription">
               <h4 class="A_Heading-H4">Лесная внимательность</h4>
-              <p class="A_Paragraph_Secondary">
+              <p class="A_Paragraph_Secondary A_Paragraph-HeroContent">
                 Проверь, замечаешь ли ты важные <br />детали во время прогулки
                 по лесу
               </p>
             </div>
           </div>
+          <img
+            class="A_Articles-CardList-Arrow"
+            src="../images/icons/Q_Icon_Arrow-White.svg"
+            alt="Иконка стрелки"
+          />
         </a>
       </section>
       <section class="O_HeroTest">
@@ -195,8 +226,10 @@
           </span>
         </div>
         <div class="M_HeroTest_Content">
-          <h2 class="A_Heading-H2">Съедобное или... нет?</h2>
-          <p class="A_Paragraph">
+          <h2 class="A_Heading-H2 A_Heading-H2-MainArticle">
+            Съедобное или... нет?
+          </h2>
+          <p class="A_Paragraph A_Paragraph-HeroContent">
             Диджитал-тренажер по грибам. Научись отличать лисичку от её
             коварного двойника по одному фото, пока ты еще дома на диване
           </p>
@@ -212,13 +245,13 @@
         ></a>
       </section>
       <section class="O_LearnMore">
-        <h2 class="A_Heading-H2">Узнать больше</h2>
+        <h2 class="A_Heading-H2 A_Heading-H2-padding">Узнать больше</h2>
         <div class="O_LearnMore-grid">
           <a href="#" class="M_LearnCard">
             <div
               class="M_Articles-CardMedia M_LearnCard-imageWrapper M_Articles-CardMedia-trail"
             >
-              <span class="M_TagItem M_TagItem-Article">
+              <span class="M_TagItem M_TagItem-Article M_TagIcon-none">
                 <img
                   class="A_TagItem-Image"
                   src="/src/images/icons/Q_Icon_Direction_border.svg"
@@ -233,7 +266,7 @@
             <div
               class="M_Articles-CardMedia M_LearnCard-imageWrapper M_Articles-CardMedia-fox"
             >
-              <span class="M_TagItem M_TagItem-Article">
+              <span class="M_TagItem M_TagItem-Article M_TagIcon-none">
                 <img
                   class="A_TagItem-Image"
                   src="/src/images/icons/Q_Icon_Flower_border.svg"
@@ -244,7 +277,7 @@
             </div>
             <h3 class="A_Heading-H3">Лисички</h3>
           </a>
-          <a href="#" class="M_LearnCard">
+          <a href="#" class="M_LearnCard M_TagIcon-none">
             <div
               class="M_Articles-CardMedia M_LearnCard-imageWrapper M_Articles-CardMedia-biotopes"
             >
