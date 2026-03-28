@@ -271,8 +271,10 @@ input[type="email"]::placeholder {
 .A_Heading-H1,
 .A_Heading-H2,
 .A_Heading-H2-medium,
+.A_Heading-H2-article,
 .A_Heading-H3,
 .A_Heading-H4,
+.A_Heading-H4-bold,
 .A_Heading-H5,
 .A_Paragraph,
 .A_Paragraph_Secondary,
@@ -292,6 +294,7 @@ input[type="email"]::placeholder {
   text-transform: uppercase;
 }
 
+.A_Heading-H4-bold,
 .A_Heading-H5-bold {
   font-weight: var(--font-weight-bold);
 }
@@ -299,6 +302,7 @@ input[type="email"]::placeholder {
 /* Medium */
 .A_Heading-H3,
 .A_Heading-H5,
+.A_Heading-H2-article,
 .A_Heading-H2-medium {
   font-weight: var(--font-weight-medium);
 }
@@ -319,12 +323,15 @@ input[type="email"]::placeholder {
   font-size: 50rem;
 }
 .A_Heading-H2,
+.A_Heading-H2-article,
 .A_Heading-H2-medium {
   font-size: 36rem;
 }
 .A_Heading-H3 {
   font-size: 28rem;
+  line-height: 1.3;
 }
+.A_Heading-H4-bold,
 .A_Heading-H4 {
   font-size: 24rem;
 }
@@ -334,7 +341,8 @@ input[type="email"]::placeholder {
   font-size: 20rem;
 }
 
-.A_Heading-H5-Secondary {
+.A_Heading-H5-Secondary,
+.A_Heading-H5 {
   line-height: 1.5;
 }
 .A_Paragraph {
@@ -812,6 +820,84 @@ input[type="email"]::placeholder {
   width: 188rem;
   height: auto;
 }
+/* ___________________article_name.html___________________ */
+.A_Link-Download {
+  align-self: center;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 8vh;
+}
+
+.A_Paragraph-padding-bottom {
+  padding-bottom: 20rem;
+}
+
+.A_ForestState-Article {
+  display: block;
+  width: 20rem;
+  min-height: auto;
+}
+
+.A_Tag-Text-Article {
+  padding-bottom: 15rem;
+  text-align: center;
+}
+
+.A_Paragraph-padding-top {
+  padding-top: 20rem;
+}
+
+.A_ForestState-SkyVar {
+  width: 22rem;
+}
+
+.A_Article-Important-img {
+  display: block;
+  width: 40rem;
+  min-height: auto;
+}
+
+.A_Article-Important-imgVar {
+  display: block;
+  width: 20rem;
+  min-height: auto;
+}
+.A_Article-Info-Stat-Card {
+  padding-top: 70rem;
+}
+.A_Article-Info-Stat-Card-DirectionVar {
+  padding-top: 60rem;
+}
+
+.A_Article-Info-Stat-Card-Ravine {
+  padding-top: 90rem;
+}
+.A_Article-Info-Stat-Card-Mountain {
+  padding-top: 72rem;
+}
+.A_Article-Info-Stat-Card-RavineVar {
+  padding-top: 95rem;
+}
+.A_Article-Info-Stat-Card-Dampness {
+  padding-top: 80rem;
+}
+.A_Article-Info-Stat-Card-Grass {
+  padding-top: 80rem;
+}
+.A_Article-Info-Stat-Card-Sheets {
+  padding-top: 80rem;
+}
+.A_Article-Info-Stat-Card-WateringCan {
+  padding-top: 85rem;
+}
+.A_Article-Info-Stat-Card-Forest {
+  padding-top: 65rem;
+}
+.A_Article-Big-img {
+  width: 900rem;
+  min-height: 250rem;
+  border-radius: 15rem;
+}
 
 .M_Logo {
   display: flex;
@@ -955,10 +1041,13 @@ input[type="email"]::placeholder {
 }
 
 .M_State-Dampness {
+  padding-left: 25rem;
+  padding-top: 125rem;
+}
+.M_State-DampnessVar {
   padding-left: 10rem;
   padding-top: 80rem;
 }
-
 .M_State-Slush {
   padding-left: 18rem;
   padding-top: 25rem;
@@ -1822,6 +1911,320 @@ input[type="email"]::placeholder {
   background-color: var(--color-card);
   border-radius: 15rem;
 }
+/* ___________________article_name.html___________________ */
+.M_Main_Article-Header {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 35rem;
+}
+.M_Main_Article-Header-tegs {
+  display: flex;
+  gap: 10rem;
+}
+.M_Article-Info {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+}
+
+.M_State-Body {
+  position: relative;
+  left: -5rem;
+  padding-top: 125rem;
+}
+.M_State-Winter {
+  position: relative;
+  left: 10rem;
+  padding-top: 100rem;
+}
+.M_State-BodyVarImg {
+  padding-left: 55rem;
+  padding-top: 45rem;
+}
+.M_State-FlowerSheets {
+  position: relative;
+  left: 5rem;
+  padding-top: 110rem;
+}
+.M_State-Grass {
+  position: relative;
+  left: -50rem;
+  padding-top: 85rem;
+}
+
+.M_State-Ear {
+  padding-top: 95rem;
+  padding-left: 40rem;
+}
+.M_State-Autumn {
+  padding-top: 70rem;
+  padding-left: 95rem;
+}
+.M_State-Iphone {
+  padding-top: 80rem;
+  padding-left: 80rem;
+}
+.M_State-Bear {
+  padding-top: 80rem;
+  padding-left: 45rem;
+}
+.M_State-TreeVar {
+  padding-top: 55rem;
+  padding-right: 30rem;
+}
+.M_State-Hand {
+  padding-top: 58rem;
+  padding-left: 40rem;
+}
+.M_State-Spring {
+  padding-top: 40rem;
+  padding-left: 80rem;
+}
+.M_State-Flower {
+  padding-top: 43rem;
+  padding-right: 10rem;
+}
+.M_State-Sun {
+  padding-top: 10rem;
+  padding-right: 45rem;
+}
+.M_State-Leg {
+  padding-top: 20rem;
+  padding-left: 40rem;
+}
+.M_State-SunVar {
+  position: relative;
+  padding-top: 0rem;
+  left: 85rem;
+}
+.M_State-Mite {
+  padding-top: 20rem;
+  padding-left: 55rem;
+}
+
+.M_State-BodyVar {
+  padding-top: 17rem;
+  padding-right: 52rem;
+}
+
+.M_State-Forest {
+  position: relative;
+  top: -5rem;
+  padding-right: 7rem;
+}
+
+.M_State-Knee {
+  padding-top: 10rem;
+  padding-left: 40rem;
+}
+.M_State-FirstAidKit {
+  padding-top: 10rem;
+  padding-left: 30rem;
+}
+.M_State-DirectionVar {
+  padding-top: 10rem;
+  padding-right: 15rem;
+}
+
+.M_Article-Info-img {
+  display: flex;
+  gap: 30rem;
+}
+
+.M_Article-Info-img-Small {
+  display: block;
+  width: 280rem;
+  min-height: auto;
+}
+.M_Article-Info-img-Small-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300rem;
+  min-height: 250rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15rem;
+}
+
+.M_Article-Info-img-Small-bg-trail {
+  background-image: url(c7f4ec16281adbee99bc.webp);
+}
+
+.M_Article-Info-img-Small-bg-sun {
+  background-image: url(43bfea778d68b0d9efb1.webp);
+}
+
+.M_Article-Info-img-Small-bg-relief {
+  background-image: url(b4689fa57eaf93209c64.webp);
+}
+.M_Article-Info-img-Small-bg-wind {
+  background-image: url(39c21d72c7a939cf716e.webp);
+}
+.M_Article-Info-img-Small-bg-firewood {
+  background-image: url(6197f6b33f862f597595.webp);
+}
+.M_Article-Info-img-Small-bg-heat {
+  background-image: url(12c97869f8d39c2e0ce6.webp);
+}
+
+.M_Article-Info-img-Large {
+  display: block;
+  width: 570rem;
+  min-height: auto;
+}
+
+.M_Article-Info-Steps {
+  display: flex;
+  flex-direction: column;
+  gap: 40rem;
+}
+
+.M_Article-Info-Step {
+  display: flex;
+  flex-direction: column;
+  padding: 20rem 17rem 20rem 20rem;
+  gap: 30rem;
+  width: 284rem;
+  min-height: auto;
+  border-radius: 15rem;
+  background-color: var(--color-card);
+}
+
+.M_Article-Info-Content {
+  display: flex;
+  gap: 30rem;
+}
+
+.M_Article-Info-Steps-Title {
+  display: flex;
+  align-items: center;
+  gap: 12rem;
+}
+
+.M_List {
+  display: flex;
+  flex-direction: column;
+  gap: 30rem;
+  padding: 30rem 20rem;
+  width: 900rem;
+  min-height: 426rem;
+  border-radius: 15rem;
+  background-color: var(--color-card);
+}
+
+.M_List_Content {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.M_List_Content-Title {
+  display: flex;
+  gap: 15rem;
+}
+
+.M_Article-Important {
+  display: flex;
+  gap: 30rem;
+  padding: 30rem 40rem;
+  width: 900rem;
+  min-height: auto;
+  border-radius: 15rem;
+  background-color: var(--color-card-accent);
+}
+
+.M_Article-storm-tegs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15rem;
+  width: 900rem;
+  min-height: 500rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(d75cde67b845addcdcf1.webp);
+}
+
+.M_Article-biotopes-tegs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15rem;
+  width: 900rem;
+  min-height: 500rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(7bd675eb058f2a5d9f04.webp);
+}
+
+.M_Article-clothing-tegs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15rem;
+  width: 900rem;
+  min-height: 500rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(2327f08085f3f14a5c3d.webp);
+}
+
+.M_Article-Info-Stat-Card {
+  display: flex;
+  flex-direction: column;
+  padding-top: 70rem;
+  width: 202rem;
+  min-height: 281rem;
+  border-radius: 15rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.M_Article-Info-Stat-Card-Forest {
+  background-image: url(68dbc5136203cc6f39dd.webp);
+}
+
+.M_Article-Info-Stat-Card-Ravine {
+  padding-top: 80rem;
+  background-image: url(3eafd68da1802bc2a795.webp);
+}
+
+.M_Article-Info-Stat-Card-Mountain {
+  background-image: url(4f6c22ad81ad0a0aeca5.webp);
+}
+
+.M_Article-Info-Stat-Card-Grass {
+  background-image: url(dfe70b704ee9c4be4dcf.webp);
+}
+
+.M_Article-Info-Stat-Card-Dampness {
+  background-image: url(a00c4ac170e8b4660086.webp);
+}
+
+.M_Article-Info-Stat-Card-RavineVar {
+  background-image: url(73b2bb4f1bf865c3f5f1.webp);
+}
+
+.M_Article-Info-Stat-Card-ForestVar {
+  background-image: url(d361ed2659f717f19b71.webp);
+}
+
+.M_Article-Info-Stat-Card-GrassVar {
+  background-image: url(0708ff982661c11d59b8.webp);
+}
+
+.M_Article-Info-Stat-Cards {
+  display: flex;
+  flex-direction: column;
+  gap: 40rem;
+}
 
 .O_Header {
   display: flex;
@@ -2402,6 +2805,79 @@ input[type="email"]::placeholder {
 }
 .O_Section-Checklist-Calendar {
   padding-bottom: 120rem;
+}
+
+/* ___________________article_name.html___________________ */
+.O_Header_Article {
+  gap: 200rem;
+  min-height: 350rem;
+}
+
+.O_Header_Article-ticks {
+  background-image: url(398de2c9a69347b8766a.webp);
+}
+
+.O_Header_Article-storm {
+  background-image: url(ddac9061ecddcf9ed84d.webp);
+}
+
+.O_Header_Article-compass {
+  background-image: url(b3f0e131491c20bb8136.webp);
+}
+.O_Header_Article-trail {
+  background-image: url(d63412de464ab2cdedb6.webp);
+}
+.O_Header_Article-backback {
+  background-image: url(a69dcd7f66e203f34cfb.webp);
+}
+.O_Header_Article-clothing {
+  background-image: url(7604c557121affeee8d2.webp);
+}
+.O_Header_Article-fire {
+  background-image: url(d282ff1d46fb8a459477.webp);
+}
+.O_Header_Article-tea {
+  background-image: url(6cb74062e28674c657ba.webp);
+}
+.O_Header_Article-Seasons {
+  background-image: url(8cd54caf5e87bc80bcd4.webp);
+}
+.O_Header_Article-biotopes {
+  background-image: url(186fa2d8f5aa827a716e.webp);
+}
+
+.O_Main_Article {
+  display: flex;
+  flex-direction: column;
+  gap: 80rem;
+  padding: 80rem 270rem 120rem;
+}
+
+.O_Article-Content {
+  display: flex;
+  flex-direction: column;
+  gap: 80rem;
+}
+
+.O_Article-Stats-Block {
+  display: flex;
+  padding: 15rem 35rem;
+  border-radius: 15rem;
+  min-height: 264rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(61683219aa1763e0484f.webp);
+}
+.O_Article-Stats-BlockVar {
+  display: flex;
+  padding: 15rem 35rem;
+  border-radius: 15rem;
+  min-height: 264rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(f485fa1cf0d80df66a0d.webp);
 }
 
 

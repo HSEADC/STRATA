@@ -69,6 +69,66 @@ const htmlPages = [
     "pages/interactive/results_test_exam_attention.html",
     ["index", "testForestAttentionResult", "allStyles"],
   ),
+  createPages(
+    "./src/pages/articles/article_ticks.html",
+    "pages/articles/article_ticks.html",
+    ["index", "allStyles"],
+  ),
+  createPages(
+    "./src/pages/articles/article_storm.html",
+    "pages/articles/article_storm.html",
+    ["index", "allStyles"],
+  ),
+  createPages(
+    "./src/pages/articles/article_compass.html",
+    "pages/articles/article_compass.html",
+    ["index", "allStyles"],
+  ),
+  createPages(
+    "./src/pages/articles/article_trail.html",
+    "pages/articles/article_trail.html",
+    ["index", "allStyles"],
+  ),
+  createPages(
+    "./src/pages/articles/article_backpack.html",
+    "pages/articles/article_backpack.html",
+    ["index", "allStyles"],
+  ),
+  createPages(
+    "./src/pages/articles/article_clothing.html",
+    "pages/articles/article_clothing.html",
+    ["index", "allStyles"],
+  ),
+  createPages(
+    "./src/pages/articles/article_fire.html",
+    "pages/articles/article_fire.html",
+    ["index", "allStyles"],
+  ),
+  createPages(
+    "./src/pages/articles/article_tea.html",
+    "pages/articles/article_tea.html",
+    ["index", "allStyles"],
+  ),
+  createPages(
+    "./src/pages/articles/article_seasons.html",
+    "pages/articles/article_seasons.html",
+    ["index", "allStyles"],
+  ),
+  createPages(
+    "./src/pages/articles/article_biotopes.html",
+    "pages/articles/article_biotopes.html",
+    ["index", "allStyles"],
+  ),
+  createPages(
+    "./src/pages/articles/article_borovik.html",
+    "pages/articles/article_borovik.html",
+    ["index", "allStyles"],
+  ),
+  createPages(
+    "./src/pages/articles/article_fox.html",
+    "pages/articles/article_fox.html",
+    ["index", "allStyles"],
+  ),
 ];
 
 module.exports = htmlPages;

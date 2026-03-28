@@ -578,3 +578,82 @@
 .O_Section-Checklist-Calendar {
   padding-bottom: 120rem;
 }
+
+/* ___________________article_name.html___________________ */
+.O_Header_Article {
+  gap: 200rem;
+  min-height: 350rem;
+}
+
+.O_Header_Article-ticks {
+  background-image: url("/src/images/articles/Q-article_ticks-bg.webp");
+}
+
+.O_Header_Article-storm {
+  background-image: url("/src/images/articles/Q-article_storm-bg.webp");
+}
+
+.O_Header_Article-compass {
+  background-image: url("/src/images/articles/Q-article_compass-bg.webp");
+}
+.O_Header_Article-trail {
+  background-image: url("/src/images/articles/Q-article_trail-bg.webp");
+}
+.O_Header_Article-backback {
+  background-image: url("/src/images/articles/Q-article_backpack-bg.webp");
+}
+.O_Header_Article-clothing {
+  background-image: url("/src/images/articles/Q-article_clothing-bg.webp");
+}
+.O_Header_Article-fire {
+  background-image: url("/src/images/articles/Q-article_fire-bg.webp");
+}
+.O_Header_Article-tea {
+  background-image: url("/src/images/articles/Q-article_tea-bg.webp");
+}
+.O_Header_Article-Seasons {
+  background-image: url("/src/images/articles/Q-article_seasons-bg.webp");
+}
+.O_Header_Article-biotopes {
+  background-image: url("/src/images/articles/Q-article_biotopes-bg.webp");
+}
+.O_Header_Article-borovik {
+  background-image: url("/src/images/articles/Q-article_borovik-bg.webp");
+}
+.O_Header_Article-fox {
+  background-image: url("/src/images/articles/Q-article_fox-bg.webp");
+}
+
+.O_Main_Article {
+  display: flex;
+  flex-direction: column;
+  gap: 80rem;
+  padding: 80rem 270rem 120rem;
+}
+
+.O_Article-Content {
+  display: flex;
+  flex-direction: column;
+  gap: 80rem;
+}
+
+.O_Article-Stats-Block {
+  display: flex;
+  padding: 15rem 35rem;
+  border-radius: 15rem;
+  min-height: 264rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/src/images/articles/Q_Article-Stats-Block.webp");
+}
+.O_Article-Stats-BlockVar {
+  display: flex;
+  padding: 15rem 35rem;
+  border-radius: 15rem;
+  min-height: 264rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/src/images/articles/Q_Article-Stats-BlockVar.webp");
+}
