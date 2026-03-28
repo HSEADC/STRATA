@@ -1039,7 +1039,10 @@ input[type="email"]::placeholder {
   padding-left: 25rem;
   padding-top: 60rem;
 }
-
+.M_State-DampnessMain {
+  padding-left: 10rem;
+  padding-top: 80rem;
+}
 .M_State-Dampness {
   padding-left: 25rem;
   padding-top: 125rem;
@@ -1670,7 +1673,7 @@ input[type="email"]::placeholder {
   grid-row: 1 / 2;
   display: flex;
   flex-direction: column;
-  gap: 55rem;
+  gap: 48rem;
   padding: 15rem 20rem;
   border-radius: 15rem;
   background-color: var(--color-card-accent);
@@ -1693,7 +1696,7 @@ input[type="email"]::placeholder {
   grid-row: 2 / 3;
   display: flex;
   flex-direction: column;
-  gap: 53rem;
+  gap: 43rem;
   padding: 15rem 20rem;
   border-radius: 15rem;
   background-color: var(--color-card-accent);
@@ -2069,7 +2072,15 @@ input[type="email"]::placeholder {
 .M_Article-Info-img-Small-bg-heat {
   background-image: url(12c97869f8d39c2e0ce6.webp);
 }
-
+.M_Article-Info-img-Small-bg-Mush {
+  background-image: url(1ca249d62bf4a9aa6f63.webp);
+}
+.M_Article-Info-img-Small-bg-cap {
+  background-image: url(8b8bb17ef2c730060e39.webp);
+}
+.M_Article-Info-img-Small-bg-MushVar {
+  background-image: url(ac9a09209a0c6a91773d.webp);
+}
 .M_Article-Info-img-Large {
   display: block;
   width: 570rem;
@@ -2717,7 +2728,7 @@ input[type="email"]::placeholder {
   grid-row: 1 / 3;
   display: flex;
   flex-direction: column;
-  gap: 40rem;
+  gap: 30rem;
   padding: 15rem 20rem;
   border-radius: 15rem;
   background-color: var(--color-card-accent);
@@ -2844,6 +2855,12 @@ input[type="email"]::placeholder {
 }
 .O_Header_Article-biotopes {
   background-image: url(186fa2d8f5aa827a716e.webp);
+}
+.O_Header_Article-borovik {
+  background-image: url(43f1e3533f633abdd178.webp);
+}
+.O_Header_Article-fox {
+  background-image: url(a8d2c773e84a8621c733.webp);
 }
 
 .O_Main_Article {
